@@ -1,6 +1,6 @@
 var Man = function(x, y) {
-  this.x = 9;
-  this.y = 9;
+  this.x = Math.floor(Math.random() * 20);
+  this.y = Math.floor(Math.random() * 20);
 }
 var House = function(x, y) {
   this.x = 4;
