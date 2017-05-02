@@ -62,4 +62,11 @@ body {
   background-position: center;
 }
 
+.people {
+  background-image: url("../images/woman.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
 /*# sourceMappingURL=../maps/style.css.map */

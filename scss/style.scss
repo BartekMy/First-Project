@@ -5,7 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: lightgreen;
+    background-color: green;
 }
 #board {
   width: 1280px;
@@ -51,6 +51,12 @@ body {
 }
 .tree {
   background-image: url('../images/tree.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.people {
+  background-image: url('../images/woman.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

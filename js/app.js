@@ -10,15 +10,24 @@ var Tree = function(x, y) {
   this.x = 14;
   this.y = 6;
 }
+var People = function(x, y, direction) {
+  this.x = Math.floor(Math.random() * 20);
+  this.y = Math.floor(Math.random() * 20);
+  this.direction = Math.floor(Math.random() * 4);
+}
 var Game = function(board, man) {
   var self = this;
   this.board = document.querySelectorAll('#board div');
   this.man = new Man();
   this.house = new House();
   this.tree = new Tree();
+  this.people = new People();
 
   this.index = function(x,y) {
     return x + (y * 20);
+  }
+  this.showPeople = function() {
+    this.board[ this.index(this.people.x,this.people.y) ].classList.add('people');
   }
   this.showTree = function() {
     this.board[ this.index(this.tree.x,this.tree.y) ].classList.add('tree');
@@ -50,6 +59,9 @@ if(event.type == 'keydown') {
 }, 7000);
     }
 }
+  this.hideVisiblePeople = function() {
+    document.querySelector('.people').classList.remove('people');
+  }
   this.hideVisibleMan = function() {
     document.querySelector('.man').classList.remove('man');
   }
@@ -89,14 +101,45 @@ if(event.type == 'keydown') {
 
   }
 
+
+  this.movePeople = function() {
+    if(this.people.direction === 0) {
+        this.people.x = this.people.x + 1;
+        this.moveTimeout = setTimeout(function(){
+          self.people.direction = Math.floor(Math.random() * 4);
+        },Math.floor(Math.random() * 5000))
+    } else if (this.people.direction === 1) {
+      this.people.x = this.people.x - 1;
+      this.moveTimeout = setTimeout(function(){
+        self.people.direction = Math.floor(Math.random() * 4);
+      },Math.floor(Math.random() * 5000))
+    } else if (this.people.direction === 2) {
+      this.people.y = this.people.y + 1;
+      this.moveTimeout = setTimeout(function(){
+        self.people.direction = Math.floor(Math.random() * 4);
+      },Math.floor(Math.random() * 5000))
+    } else if (this.people.direction === 3) {
+      this.people.y = this.people.y - 1;
+      this.moveTimeout = setTimeout(function(){
+        self.people.direction = Math.floor(Math.random() * 4);
+      },Math.floor(Math.random() * 5000))
+    }
+  }
+  this.startGame = function() {
+    this.idSetInterval = setInterval(function(){
+      self.hideVisiblePeople();
+      self.showPeople();
+      self.movePeople();
+    }, 500);
+  }
 }
 
 var game = new Game();
 game.showMan();
 game.showHouse();
 game.showTree();
-
-
+game.showPeople();
+game.startGame();
 
 document.addEventListener('keydown', function(event){
 game.hideVisibleSittingMan();
