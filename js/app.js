@@ -133,7 +133,7 @@ if(event.type == 'keydown') {
   }
   this.checkCollision = function() {
     if(this.board[ this.index(this.man.x,this.man.y) ] === this.board[ this.index(this.house.x,this.house.y) ]) {
-      console.log("Boom");
+      window.location = "../First-Project/me.html";
     }
   }
 
