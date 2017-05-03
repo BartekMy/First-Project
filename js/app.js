@@ -92,13 +92,12 @@ if(event.type == 'keydown') {
         this.man.y = this.man.y + 1;
         break;
       }
-
       self.hideVisibleMan();
       self.showMan();
       self.hideAllVisibleWalkingMan();
       self.timeout();
       self.showWalkingMan();
-
+      self.checkCollision();
   }
 
 
@@ -132,6 +131,12 @@ if(event.type == 'keydown') {
       self.movePeople();
     }, 500);
   }
+  this.checkCollision = function() {
+    if(this.board[ this.index(this.man.x,this.man.y) ] === this.board[ this.index(this.house.x,this.house.y) ]) {
+      console.log("Boom");
+    }
+  }
+
 }
 
 var game = new Game();
