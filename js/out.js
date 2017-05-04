@@ -9417,30 +9417,77 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 document.addEventListener('DOMContentLoaded', function () {
-    var App = function (_React$Component) {
-        _inherits(App, _React$Component);
+  var Header = function (_React$Component) {
+    _inherits(Header, _React$Component);
 
-        function App() {
-            _classCallCheck(this, App);
+    function Header() {
+      _classCallCheck(this, Header);
 
-            return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
-        }
+      return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+    }
 
-        _createClass(App, [{
-            key: 'render',
-            value: function render() {
-                return _react2.default.createElement(
-                    'h1',
-                    null,
-                    'My World'
-                );
-            }
-        }]);
+    _createClass(Header, [{
+      key: 'render',
+      value: function render() {
+        return _react2.default.createElement(
+          'header',
+          { className: 'header' },
+          'Welcome to my Home'
+        );
+      }
+    }]);
 
-        return App;
-    }(_react2.default.Component);
+    return Header;
+  }(_react2.default.Component);
 
-    _reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('app'));
+  var App = function (_React$Component2) {
+    _inherits(App, _React$Component2);
+
+    function App() {
+      _classCallCheck(this, App);
+
+      return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+    }
+
+    _createClass(App, [{
+      key: 'render',
+      value: function render() {
+        return _react2.default.createElement(
+          'div',
+          { className: 'wrapper' },
+          _react2.default.createElement(Header, null),
+          _react2.default.createElement(
+            'article',
+            { className: 'main' },
+            _react2.default.createElement(
+              'p',
+              null,
+              'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.'
+            )
+          ),
+          _react2.default.createElement(
+            'aside',
+            { className: 'aside aside-1' },
+            'Aside 1'
+          ),
+          _react2.default.createElement(
+            'aside',
+            { className: 'aside aside-2' },
+            'Aside 2'
+          ),
+          _react2.default.createElement(
+            'footer',
+            { className: 'footer' },
+            'Footer'
+          )
+        );
+      }
+    }]);
+
+    return App;
+  }(_react2.default.Component);
+
+  _reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('app'));
 });
 
 /***/ }),
