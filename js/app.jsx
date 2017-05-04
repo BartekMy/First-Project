@@ -3,10 +3,23 @@ import ReactDOM from 'react-dom';
 
 document.addEventListener('DOMContentLoaded', function(){
 
+class Navigation extends React.Component {
+  render() {
+    return <nav className="aside">
+            <ul className="navigation">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Living Room</a></li>
+              <li><a href="#">My Office</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+  }
+}
+
 class Article extends React.Component {
   render(){
     return <article className="main">
-      <p></p>
+
     </article>
   }
 }
@@ -19,10 +32,10 @@ class Header extends React.Component {
 
 class App extends React.Component {
   render(){
-    return <div className="wrapper">
+    return <div className="flexbox">
             <Header />
             <Article />
-            <aside className="aside aside-1">Aside 1</aside>
+            <Navigation />
 
             <footer className="footer">Footer</footer>
           </div>

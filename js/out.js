@@ -9417,8 +9417,70 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 document.addEventListener('DOMContentLoaded', function () {
-  var Article = function (_React$Component) {
-    _inherits(Article, _React$Component);
+  var Navigation = function (_React$Component) {
+    _inherits(Navigation, _React$Component);
+
+    function Navigation() {
+      _classCallCheck(this, Navigation);
+
+      return _possibleConstructorReturn(this, (Navigation.__proto__ || Object.getPrototypeOf(Navigation)).apply(this, arguments));
+    }
+
+    _createClass(Navigation, [{
+      key: 'render',
+      value: function render() {
+        return _react2.default.createElement(
+          'nav',
+          { className: 'aside' },
+          _react2.default.createElement(
+            'ul',
+            { className: 'navigation' },
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Home'
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Living Room'
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'My Office'
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                'Contact'
+              )
+            )
+          )
+        );
+      }
+    }]);
+
+    return Navigation;
+  }(_react2.default.Component);
+
+  var Article = function (_React$Component2) {
+    _inherits(Article, _React$Component2);
 
     function Article() {
       _classCallCheck(this, Article);
@@ -9429,19 +9491,15 @@ document.addEventListener('DOMContentLoaded', function () {
     _createClass(Article, [{
       key: 'render',
       value: function render() {
-        return _react2.default.createElement(
-          'article',
-          { className: 'main' },
-          _react2.default.createElement('p', null)
-        );
+        return _react2.default.createElement('article', { className: 'main' });
       }
     }]);
 
     return Article;
   }(_react2.default.Component);
 
-  var Header = function (_React$Component2) {
-    _inherits(Header, _React$Component2);
+  var Header = function (_React$Component3) {
+    _inherits(Header, _React$Component3);
 
     function Header() {
       _classCallCheck(this, Header);
@@ -9463,8 +9521,8 @@ document.addEventListener('DOMContentLoaded', function () {
     return Header;
   }(_react2.default.Component);
 
-  var App = function (_React$Component3) {
-    _inherits(App, _React$Component3);
+  var App = function (_React$Component4) {
+    _inherits(App, _React$Component4);
 
     function App() {
       _classCallCheck(this, App);
@@ -9477,14 +9535,10 @@ document.addEventListener('DOMContentLoaded', function () {
       value: function render() {
         return _react2.default.createElement(
           'div',
-          { className: 'wrapper' },
+          { className: 'flexbox' },
           _react2.default.createElement(Header, null),
           _react2.default.createElement(Article, null),
-          _react2.default.createElement(
-            'aside',
-            { className: 'aside aside-1' },
-            'Aside 1'
-          ),
+          _react2.default.createElement(Navigation, null),
           _react2.default.createElement(
             'footer',
             { className: 'footer' },
