@@ -9417,8 +9417,50 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 document.addEventListener('DOMContentLoaded', function () {
-  var Navigation = function (_React$Component) {
-    _inherits(Navigation, _React$Component);
+  var Footer = function (_React$Component) {
+    _inherits(Footer, _React$Component);
+
+    function Footer() {
+      var _ref;
+
+      var _temp, _this, _ret;
+
+      _classCallCheck(this, Footer);
+
+      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+
+      return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Footer.__proto__ || Object.getPrototypeOf(Footer)).call.apply(_ref, [this].concat(args))), _this), _this.handleOnClick = function () {
+        window.location = "../First-Project/index.html";
+      }, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+
+    _createClass(Footer, [{
+      key: 'render',
+      value: function render() {
+        return _react2.default.createElement(
+          'footer',
+          { className: 'footer' },
+          _react2.default.createElement(
+            'a',
+            { href: '#', className: 'village', onClick: this.handleOnClick },
+            'Lets go back to my village'
+          ),
+          _react2.default.createElement(
+            'p',
+            { className: 'copy' },
+            '\xA9 Bartosz Mylka 2017'
+          )
+        );
+      }
+    }]);
+
+    return Footer;
+  }(_react2.default.Component);
+
+  var Navigation = function (_React$Component2) {
+    _inherits(Navigation, _React$Component2);
 
     function Navigation() {
       _classCallCheck(this, Navigation);
@@ -9479,8 +9521,8 @@ document.addEventListener('DOMContentLoaded', function () {
     return Navigation;
   }(_react2.default.Component);
 
-  var Article = function (_React$Component2) {
-    _inherits(Article, _React$Component2);
+  var Article = function (_React$Component3) {
+    _inherits(Article, _React$Component3);
 
     function Article() {
       _classCallCheck(this, Article);
@@ -9498,8 +9540,8 @@ document.addEventListener('DOMContentLoaded', function () {
     return Article;
   }(_react2.default.Component);
 
-  var Header = function (_React$Component3) {
-    _inherits(Header, _React$Component3);
+  var Header = function (_React$Component4) {
+    _inherits(Header, _React$Component4);
 
     function Header() {
       _classCallCheck(this, Header);
@@ -9521,8 +9563,8 @@ document.addEventListener('DOMContentLoaded', function () {
     return Header;
   }(_react2.default.Component);
 
-  var App = function (_React$Component4) {
-    _inherits(App, _React$Component4);
+  var App = function (_React$Component5) {
+    _inherits(App, _React$Component5);
 
     function App() {
       _classCallCheck(this, App);
@@ -9539,11 +9581,7 @@ document.addEventListener('DOMContentLoaded', function () {
           _react2.default.createElement(Header, null),
           _react2.default.createElement(Article, null),
           _react2.default.createElement(Navigation, null),
-          _react2.default.createElement(
-            'footer',
-            { className: 'footer' },
-            'Footer'
-          )
+          _react2.default.createElement(Footer, null)
         );
       }
     }]);

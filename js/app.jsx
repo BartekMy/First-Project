@@ -3,6 +3,19 @@ import ReactDOM from 'react-dom';
 
 document.addEventListener('DOMContentLoaded', function(){
 
+class Footer extends React. Component {
+  handleOnClick = () => {
+    window.location = "../First-Project/index.html";
+  }
+
+  render() {
+    return <footer className="footer">
+            <a href="#" className="village" onClick={this.handleOnClick}>Lets go back to my village</a>
+            <p className="copy">&copy; Bartosz Mylka 2017</p>
+          </footer>
+  }
+}
+
 class Navigation extends React.Component {
   render() {
     return <nav className="aside">
@@ -36,8 +49,7 @@ class App extends React.Component {
             <Header />
             <Article />
             <Navigation />
-
-            <footer className="footer">Footer</footer>
+            <Footer />
           </div>
   }
 }

@@ -27,9 +27,16 @@
 }
 
 .footer {
-  background: lightgreen;
+  background: black;
+  color: white;
 }
-
+.footer:hover {
+  background: white;
+  color: black;
+  a {
+    color: black;
+  }
+}
 .main {
   text-align: left;
   background: url("../images/living_room.jpg");
@@ -39,9 +46,9 @@
   height: 100vh;
 }
 
-// .aside {
-//   background: gold;
-// }
+.aside {
+  background: white;
+}
 
 @media all and (min-width: 600px) {
   .aside { flex: 1 0px; }
@@ -71,13 +78,26 @@
 }
 
 .navigation a:hover {
-  background: darken(black, 2%);
+  background: white;
+  color: black;
 }
-
 
 .navigation a {
   text-align: center;
   padding: 10px;
   border-top: 1px solid rgba(255,255,255,0.3);
   border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.navigation li:last-of-type a {
+    border-bottom: none;
+  }
+
+.copy {
+  float: right;
+}
+.village {
+  float: left;
+  text-decoration: none;
+  color: white;
 }

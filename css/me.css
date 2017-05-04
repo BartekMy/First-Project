@@ -26,7 +26,17 @@
 }
 
 .footer {
-  background: lightgreen;
+  background: black;
+  color: white;
+}
+
+.footer:hover {
+  background: white;
+  color: black;
+}
+
+.footer:hover a {
+  color: black;
 }
 
 .main {
@@ -36,6 +46,10 @@
   background-size: 100;
   background-position: center;
   height: 100vh;
+}
+
+.aside {
+  background: white;
 }
 
 @media all and (min-width: 600px) {
@@ -73,7 +87,8 @@
 }
 
 .navigation a:hover {
-  background: black;
+  background: white;
+  color: black;
 }
 
 .navigation a {
@@ -81,6 +96,20 @@
   padding: 10px;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navigation li:last-of-type a {
+  border-bottom: none;
+}
+
+.copy {
+  float: right;
+}
+
+.village {
+  float: left;
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=../maps/me.css.map */
