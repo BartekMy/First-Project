@@ -30,6 +30,10 @@ class Navigation extends React.Component {
             <div className="pin" />
             <p>Bartosz Mylka<br/>ul. Przestrzenna 41/2<br/>50-534 Wroclaw</p>
             </div>
+            <div className="email">
+            <div className="gmail" />
+            <p>bmylka@gmail.com</p>
+            </div>
             </div>
           </nav>
   }

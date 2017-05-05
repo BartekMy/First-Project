@@ -9530,6 +9530,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 _react2.default.createElement('br', null),
                 '50-534 Wroclaw'
               )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'email' },
+              _react2.default.createElement('div', { className: 'gmail' }),
+              _react2.default.createElement(
+                'p',
+                null,
+                'bmylka@gmail.com'
+              )
             )
           )
         );

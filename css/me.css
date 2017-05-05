@@ -139,6 +139,7 @@ body {
   display: -webkit-flex;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 10px;
 }
 
@@ -149,6 +150,28 @@ body {
   background-position: center;
   height: 40px;
   width: 40px;
+  margin: 10px;
+}
+
+.email {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.gmail {
+  background: url("../images/gmail.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40px;
+  width: 40px;
+  margin: 10px;
 }
 
 .copy {
