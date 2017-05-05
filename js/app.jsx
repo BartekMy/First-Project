@@ -32,7 +32,9 @@ class Navigation extends React.Component {
 class Article extends React.Component {
   render(){
     return <article className="main">
-
+            <div className="home" />
+            <div className="living_room" />
+            <div className="office" />
     </article>
   }
 }

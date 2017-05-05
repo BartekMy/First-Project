@@ -39,11 +39,29 @@
   color: black;
 }
 
-.main {
+.home {
+  text-align: left;
+  background: url("../images/home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.living_room {
   text-align: left;
   background: url("../images/living_room.jpg");
   background-repeat: no-repeat;
-  background-size: 100;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.office {
+  text-align: left;
+  background: url("../images/office.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   height: 100vh;
 }

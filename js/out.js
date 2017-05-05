@@ -9533,7 +9533,13 @@ document.addEventListener('DOMContentLoaded', function () {
     _createClass(Article, [{
       key: 'render',
       value: function render() {
-        return _react2.default.createElement('article', { className: 'main' });
+        return _react2.default.createElement(
+          'article',
+          { className: 'main' },
+          _react2.default.createElement('div', { className: 'home' }),
+          _react2.default.createElement('div', { className: 'living_room' }),
+          _react2.default.createElement('div', { className: 'office' })
+        );
       }
     }]);
 
