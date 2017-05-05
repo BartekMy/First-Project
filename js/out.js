@@ -9450,7 +9450,7 @@ document.addEventListener('DOMContentLoaded', function () {
           _react2.default.createElement(
             'p',
             { className: 'copy' },
-            '\xA9 Bartosz Mylka 2017'
+            '\xA9 2017 Bartosz Mylka'
           )
         );
       }
