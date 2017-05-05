@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+body {
+  font-family: 'Cormorant SC', serif;
+}
+
 .flexbox {
   display: -webkit-box;
   display: -moz-box;
@@ -46,6 +50,7 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
+  margin-bottom: 10px;
 }
 
 #living_room {
@@ -55,6 +60,7 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
+  margin-bottom: 10px;
 }
 
 #office {

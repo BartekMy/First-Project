@@ -11,7 +11,7 @@ class Footer extends React. Component {
   render() {
     return <footer className="footer">
             <a href="#" className="village" onClick={this.handleOnClick}>Lets go back to my village</a>
-            <p className="copy">&copy; 2017 Bartosz Mylka</p>
+            <p className="copy">Copyright &copy; 2017 Bartosz Mylka</p>
           </footer>
   }
 }
