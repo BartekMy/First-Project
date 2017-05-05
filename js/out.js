@@ -9482,7 +9482,7 @@ document.addEventListener('DOMContentLoaded', function () {
               null,
               _react2.default.createElement(
                 'a',
-                { href: '#' },
+                { href: '#home' },
                 'Home'
               )
             ),
@@ -9491,7 +9491,7 @@ document.addEventListener('DOMContentLoaded', function () {
               null,
               _react2.default.createElement(
                 'a',
-                { href: '#' },
+                { href: '#living_room' },
                 'Living Room'
               )
             ),
@@ -9500,7 +9500,7 @@ document.addEventListener('DOMContentLoaded', function () {
               null,
               _react2.default.createElement(
                 'a',
-                { href: '#' },
+                { href: '#office' },
                 'My Office'
               )
             ),
@@ -9536,9 +9536,9 @@ document.addEventListener('DOMContentLoaded', function () {
         return _react2.default.createElement(
           'article',
           { className: 'main' },
-          _react2.default.createElement('div', { className: 'home' }),
-          _react2.default.createElement('div', { className: 'living_room' }),
-          _react2.default.createElement('div', { className: 'office' })
+          _react2.default.createElement('div', { id: 'home' }),
+          _react2.default.createElement('div', { id: 'living_room' }),
+          _react2.default.createElement('div', { id: 'office' })
         );
       }
     }]);

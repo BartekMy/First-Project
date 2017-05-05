@@ -20,9 +20,9 @@ class Navigation extends React.Component {
   render() {
     return <nav className="aside">
             <ul className="navigation">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Living Room</a></li>
-              <li><a href="#">My Office</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#living_room">Living Room</a></li>
+              <li><a href="#office">My Office</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
           </nav>
@@ -32,9 +32,9 @@ class Navigation extends React.Component {
 class Article extends React.Component {
   render(){
     return <article className="main">
-            <div className="home" />
-            <div className="living_room" />
-            <div className="office" />
+            <div id="home" />
+            <div id="living_room" />
+            <div id="office" />
     </article>
   }
 }
