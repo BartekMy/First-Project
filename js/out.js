@@ -9540,6 +9540,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 null,
                 'bmylka@gmail.com'
               )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'linkedin' },
+              _react2.default.createElement('div', { className: 'li_icon' }),
+              _react2.default.createElement(
+                'p',
+                null,
+                'linkedin.com/in/bartosz-mylka'
+              )
             )
           )
         );

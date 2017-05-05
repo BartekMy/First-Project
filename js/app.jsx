@@ -34,6 +34,10 @@ class Navigation extends React.Component {
             <div className="gmail" />
             <p>bmylka@gmail.com</p>
             </div>
+            <div className="linkedin">
+            <div className="li_icon" />
+            <p>linkedin.com/in/bartosz-mylka</p>
+            </div>
             </div>
           </nav>
   }
