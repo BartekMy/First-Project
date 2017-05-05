@@ -32,11 +32,11 @@ class Navigation extends React.Component {
             </div>
             <div className="email">
             <div className="gmail" />
-            <p>bmylka@gmail.com</p>
+            <a href="mailto:bmylka@gmail.com">bmylka@gmail.com</a>
             </div>
             <div className="linkedin">
             <div className="li_icon" />
-            <p>linkedin.com/in/bartosz-mylka</p>
+            <a href="https://linkedin.com/in/bartosz-mylka">linkedin.com/in/bartosz-mylka</a>
             </div>
             </div>
           </nav>

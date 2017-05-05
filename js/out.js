@@ -9536,8 +9536,8 @@ document.addEventListener('DOMContentLoaded', function () {
               { className: 'email' },
               _react2.default.createElement('div', { className: 'gmail' }),
               _react2.default.createElement(
-                'p',
-                null,
+                'a',
+                { href: 'mailto:bmylka@gmail.com' },
                 'bmylka@gmail.com'
               )
             ),
@@ -9546,8 +9546,8 @@ document.addEventListener('DOMContentLoaded', function () {
               { className: 'linkedin' },
               _react2.default.createElement('div', { className: 'li_icon' }),
               _react2.default.createElement(
-                'p',
-                null,
+                'a',
+                { href: 'https://linkedin.com/in/bartosz-mylka' },
                 'linkedin.com/in/bartosz-mylka'
               )
             )
