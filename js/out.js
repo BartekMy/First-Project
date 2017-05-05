@@ -9475,42 +9475,60 @@ document.addEventListener('DOMContentLoaded', function () {
           'nav',
           { className: 'aside' },
           _react2.default.createElement(
-            'ul',
-            { className: 'navigation' },
+            'div',
+            { className: 'sticky' },
             _react2.default.createElement(
-              'li',
-              null,
+              'ul',
+              { className: 'navigation' },
               _react2.default.createElement(
-                'a',
-                { href: '#home' },
-                'Home'
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#home' },
+                  'Home'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#living_room' },
+                  'Living Room'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#office' },
+                  'My Office'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#' },
+                  'Contact'
+                )
               )
             ),
             _react2.default.createElement(
-              'li',
-              null,
+              'div',
+              { className: 'adress' },
+              _react2.default.createElement('div', { className: 'pin' }),
               _react2.default.createElement(
-                'a',
-                { href: '#living_room' },
-                'Living Room'
-              )
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              _react2.default.createElement(
-                'a',
-                { href: '#office' },
-                'My Office'
-              )
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              _react2.default.createElement(
-                'a',
-                { href: '#' },
-                'Contact'
+                'p',
+                null,
+                'Bartosz Mylka',
+                _react2.default.createElement('br', null),
+                'ul. Przestrzenna 41/2',
+                _react2.default.createElement('br', null),
+                '50-534 Wroclaw'
               )
             )
           )

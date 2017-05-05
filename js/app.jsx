@@ -19,12 +19,18 @@ class Footer extends React. Component {
 class Navigation extends React.Component {
   render() {
     return <nav className="aside">
+            <div className="sticky">
             <ul className="navigation">
               <li><a href="#home">Home</a></li>
               <li><a href="#living_room">Living Room</a></li>
               <li><a href="#office">My Office</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
+            <div className="adress">
+            <div className="pin" />
+            <p>Bartosz Mylka<br/>ul. Przestrzenna 41/2<br/>50-534 Wroclaw</p>
+            </div>
+            </div>
           </nav>
   }
 }
