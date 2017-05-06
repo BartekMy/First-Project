@@ -9543,6 +9543,16 @@ document.addEventListener('DOMContentLoaded', function () {
             ),
             _react2.default.createElement(
               'div',
+              { className: 'phone' },
+              _react2.default.createElement('div', { className: 'number' }),
+              _react2.default.createElement(
+                'p',
+                null,
+                '+48 504 505 230'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
               { className: 'linkedin' },
               _react2.default.createElement('div', { className: 'li_icon' }),
               _react2.default.createElement(

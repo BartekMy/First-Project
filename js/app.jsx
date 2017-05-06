@@ -34,6 +34,10 @@ class Navigation extends React.Component {
             <div className="gmail" />
             <a href="mailto:bmylka@gmail.com">bmylka@gmail.com</a>
             </div>
+            <div className="phone">
+            <div className="number" />
+            <p>+48 504 505 230</p>
+            </div>
             <div className="linkedin">
             <div className="li_icon" />
             <a href="https://linkedin.com/in/bartosz-mylka">linkedin.com/in/bartosz-mylka</a>

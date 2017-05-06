@@ -192,6 +192,26 @@ body {
   margin: 10px;
 }
 
+.phone {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.number {
+  background: url("../images/number.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+}
+
 .copy {
   float: right;
 }
