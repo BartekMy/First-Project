@@ -9450,7 +9450,7 @@ document.addEventListener('DOMContentLoaded', function () {
           _react2.default.createElement(
             'p',
             { className: 'copy' },
-            'Copyright \xA9 2017 Bartosz Mylka'
+            'Copyright \xA9 2017 Bartosz Mylka All rights reserved.'
           )
         );
       }
@@ -9582,10 +9582,35 @@ document.addEventListener('DOMContentLoaded', function () {
   var Article = function (_React$Component3) {
     _inherits(Article, _React$Component3);
 
-    function Article() {
+    function Article(props) {
       _classCallCheck(this, Article);
 
-      return _possibleConstructorReturn(this, (Article.__proto__ || Object.getPrototypeOf(Article)).apply(this, arguments));
+      var _this3 = _possibleConstructorReturn(this, (Article.__proto__ || Object.getPrototypeOf(Article)).call(this, props));
+
+      _this3.handleOnMouseEnter1 = function () {
+        _this3.setState({
+          showTextfield_home: true
+        });
+      };
+
+      _this3.handleOnMouseEnter2 = function () {
+        _this3.setState({
+          showTextfield_living_room: true
+        });
+      };
+
+      _this3.handleOnMouseEnter3 = function () {
+        _this3.setState({
+          showTextfield_office: true
+        });
+      };
+
+      _this3.state = {
+        showTextfield_home: false,
+        showTextfield_living_room: false,
+        showTextfield_office: false
+      };
+      return _this3;
     }
 
     _createClass(Article, [{
@@ -9594,9 +9619,25 @@ document.addEventListener('DOMContentLoaded', function () {
         return _react2.default.createElement(
           'article',
           { className: 'main' },
-          _react2.default.createElement('div', { id: 'home' }),
-          _react2.default.createElement('div', { id: 'living_room' }),
-          _react2.default.createElement('div', { id: 'office' })
+          _react2.default.createElement(
+            'div',
+            { id: 'home', onMouseEnter: this.handleOnMouseEnter1 },
+            this.state.showTextfield_home ? _react2.default.createElement('div', { className: 'textfield' }) : null
+          ),
+          _react2.default.createElement(
+            'div',
+            { id: 'living_room', onMouseEnter: this.handleOnMouseEnter2 },
+            this.state.showTextfield_living_room ? _react2.default.createElement('div', { className: 'textfield' }) : null
+          ),
+          _react2.default.createElement(
+            'div',
+            { id: 'office' },
+            _react2.default.createElement(
+              'div',
+              { id: 'living_room', onMouseEnter: this.handleOnMouseEnter3 },
+              this.state.showTextfield_office ? _react2.default.createElement('div', { className: 'textfield' }) : null
+            )
+          )
         );
       }
     }]);

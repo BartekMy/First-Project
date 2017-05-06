@@ -11,7 +11,7 @@ class Footer extends React. Component {
   render() {
     return <footer className="footer">
             <a href="#" className="village" onClick={this.handleOnClick}>Lets go back to my village</a>
-            <p className="copy">Copyright &copy; 2017 Bartosz Mylka</p>
+            <p className="copy">Copyright &copy; 2017 Bartosz Mylka All rights reserved.</p>
           </footer>
   }
 }
@@ -52,11 +52,44 @@ class Navigation extends React.Component {
 }
 
 class Article extends React.Component {
+constructor(props){
+  super(props);
+    this.state = {
+      showTextfield_home: false,
+      showTextfield_living_room: false,
+      showTextfield_office: false
+    }
+  }
+
+
+handleOnMouseEnter1 = () => {
+  this.setState({
+    showTextfield_home: true
+  })
+}
+handleOnMouseEnter2 = () => {
+  this.setState({
+    showTextfield_living_room: true
+  })
+}
+handleOnMouseEnter3 = () => {
+  this.setState({
+    showTextfield_office: true
+  })
+}
   render(){
     return <article className="main">
-            <div id="home" />
-            <div id="living_room" />
-            <div id="office" />
+            <div id="home" onMouseEnter={this.handleOnMouseEnter1}>
+              { this.state.showTextfield_home ? <div className="textfield" /> : null }
+            </div>
+            <div id="living_room" onMouseEnter={this.handleOnMouseEnter2}>
+              { this.state.showTextfield_living_room ? <div className="textfield" /> : null }
+            </div>
+            <div id="office">
+              <div id="living_room" onMouseEnter={this.handleOnMouseEnter3}>
+                { this.state.showTextfield_office ? <div className="textfield" /> : null }
+              </div>
+            </div>
     </article>
   }
 }

@@ -3,8 +3,9 @@
     margin: 0;
 }
 body {
-  font-family: 'Cormorant SC', serif;
+  font-family: 'Indie Flower', cursive;
 }
+
 .flexbox {
   display: -webkit-box;
   display: -moz-box;
@@ -48,6 +49,13 @@ body {
   background-position: center;
   height: 100vh;
   margin-bottom: 10px;
+  // border: 3px solid black;
+}
+
+.textfield {
+  background-color: rgba(255,255,255,0.5);
+  height: 100vh;
+  display: block;
 }
 #living_room {
   text-align: left;
@@ -58,6 +66,7 @@ body {
   height: 100vh;
   margin-bottom: 10px;
 }
+
 #office {
   text-align: left;
   background: url("../images/office.jpg");
