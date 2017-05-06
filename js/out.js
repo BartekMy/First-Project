@@ -9560,6 +9560,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 { href: 'https://linkedin.com/in/bartosz-mylka' },
                 'linkedin.com/in/bartosz-mylka'
               )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'github' },
+              _react2.default.createElement('div', { className: 'gh_icon' }),
+              _react2.default.createElement(
+                'a',
+                { href: 'https://github.com/BartekMy' },
+                'github.com/BartekMy'
+              )
             )
           )
         );

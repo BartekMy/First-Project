@@ -42,6 +42,10 @@ class Navigation extends React.Component {
             <div className="li_icon" />
             <a href="https://linkedin.com/in/bartosz-mylka">linkedin.com/in/bartosz-mylka</a>
             </div>
+            <div className="github">
+            <div className="gh_icon" />
+            <a href="https://github.com/BartekMy">github.com/BartekMy</a>
+            </div>
             </div>
           </nav>
   }
