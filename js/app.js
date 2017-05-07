@@ -1,6 +1,6 @@
 var Man = function(x, y) {
-  this.x = Math.floor(Math.random() * 20);
-  this.y = Math.floor(Math.random() * 20);
+  this.x = 9;
+  this.y = 9;
 }
 var House = function(x, y) {
   this.x = 4;
@@ -38,45 +38,45 @@ var Game = function(board, man) {
   this.showMan = function() {
     this.board[ this.index(this.man.x,this.man.y) ].classList.add('man');
   }
-  this.showWalkingMan = function() {
-    this.board[ this.index(this.man.x,this.man.y) ].classList.add('man_walking');
-  }
-  this.showStandingMan = function() {
-    this.board[ this.index(this.man.x,this.man.y) ].classList.add('man_standing');
-  }
-  this.showSittingMan = function() {
-    this.board[ this.index(this.man.x,this.man.y) ].classList.add('man_sitting');
-  }
-  this.timeout = function() {
-if(event.type == 'keydown') {
-    setTimeout(function() {
-      self.hideVisibleWalkingMan();
-      self.showStandingMan();
-  }, 5000);
-  setTimeout(function() {
-    self.hideVisibleStandingMan();
-    self.showSittingMan();
-}, 7000);
-    }
-}
+  // this.showWalkingMan = function() {
+  //   this.board[ this.index(this.man.x,this.man.y) ].classList.add('man_walking');
+  // }
+  // this.showStandingMan = function() {
+  //   this.board[ this.index(this.man.x,this.man.y) ].classList.add('man_standing');
+  // }
+  // this.showSittingMan = function() {
+  //   this.board[ this.index(this.man.x,this.man.y) ].classList.add('man_sitting');
+  // }
+//   this.timeout = function() {
+// if(event.type == 'keydown') {
+//     setTimeout(function() {
+//       self.hideVisibleWalkingMan();
+//       self.showStandingMan();
+//   }, 5000);
+//   setTimeout(function() {
+//     self.hideVisibleStandingMan();
+//     self.showSittingMan();
+// }, 7000);
+//     }
+// }
   this.hideVisiblePeople = function() {
     document.querySelector('.people').classList.remove('people');
   }
   this.hideVisibleMan = function() {
     document.querySelector('.man').classList.remove('man');
   }
-  this.hideAllVisibleWalkingMan = function() {
-    document.querySelector('.man_walking').classList.remove('man_walking');
-  }
-  this.hideVisibleWalkingMan = function() {
-    this.board[ this.index(this.man.x,this.man.y) ].classList.remove('man_walking');
-  }
-  this.hideVisibleStandingMan = function() {
-    this.board[ this.index(this.man.x,this.man.y) ].classList.remove('man_standing');
-  }
-  this.hideVisibleSittingMan = function() {
-    this.board[ this.index(this.man.x,this.man.y) ].classList.remove('man_sitting');
-  }
+  // this.hideAllVisibleWalkingMan = function() {
+  //   document.querySelector('.man_walking').classList.remove('man_walking');
+  // }
+  // this.hideVisibleWalkingMan = function() {
+  //   this.board[ this.index(this.man.x,this.man.y) ].classList.remove('man_walking');
+  // }
+  // this.hideVisibleStandingMan = function() {
+  //   this.board[ this.index(this.man.x,this.man.y) ].classList.remove('man_standing');
+  // }
+  // this.hideVisibleSittingMan = function() {
+  //   this.board[ this.index(this.man.x,this.man.y) ].classList.remove('man_sitting');
+  // }
   this.moveMan = function(event) {
       switch(event.which) {
         case 37:
@@ -94,10 +94,11 @@ if(event.type == 'keydown') {
       }
       self.hideVisibleMan();
       self.showMan();
-      self.hideAllVisibleWalkingMan();
-      self.timeout();
-      self.showWalkingMan();
+      // self.hideAllVisibleWalkingMan();
+      // self.timeout();
+      // self.showWalkingMan();
       self.checkCollision();
+      self.gameOver();
   }
 
 
@@ -123,6 +124,7 @@ if(event.type == 'keydown') {
         self.people.direction = Math.floor(Math.random() * 4);
       },Math.floor(Math.random() * 5000))
     }
+    self.gameOver();
   }
   this.startGame = function() {
     this.idSetInterval = setInterval(function(){
@@ -136,7 +138,17 @@ if(event.type == 'keydown') {
       window.location = "../First-Project/me.html";
     }
   }
-
+  this.gameOver = function() {
+      if(this.board[ this.index(this.man.x,this.man.y) ] === this.board[ this.index(this.people.x,this.people.y) ]) {
+        clearInterval(self.idSetInterval);
+        var over = document.querySelector('#over');
+        var end = document.createElement('h1');
+        end.innerHTML = "GAME OVER";
+        over.classList.remove('invisible');
+        over.append(end);
+        self.hideVisibleMan();
+      }
+    }
 }
 
 var game = new Game();
@@ -147,9 +159,9 @@ game.showPeople();
 game.startGame();
 
 document.addEventListener('keydown', function(event){
-game.hideVisibleSittingMan();
-game.hideVisibleStandingMan();
-game.showWalkingMan();
+// game.hideVisibleSittingMan();
+// game.hideVisibleStandingMan();
+// game.showWalkingMan();
 game.moveMan(event);
 
   });
