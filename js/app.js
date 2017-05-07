@@ -3,16 +3,16 @@ var Man = function(x, y) {
   this.y = 9;
 }
 var House = function(x, y) {
-  this.x = 4;
-  this.y = 4;
+  this.x = Math.floor(Math.random() * 10);
+  this.y = Math.floor(Math.random() * 10);
 }
 var Tree = function(x, y) {
-  this.x = 14;
-  this.y = 6;
+  this.x = Math.floor(Math.random() * 10);
+  this.y = Math.floor(Math.random() * 10);
 }
-var People = function(x, y, direction) {
-  this.x = Math.floor(Math.random() * 20);
-  this.y = Math.floor(Math.random() * 20);
+var Zombie = function(x, y, direction) {
+  this.x = Math.floor(Math.random() * 10);
+  this.y = Math.floor(Math.random() * 10);
   this.direction = Math.floor(Math.random() * 4);
 }
 var Game = function(board, man) {
@@ -21,13 +21,13 @@ var Game = function(board, man) {
   this.man = new Man();
   this.house = new House();
   this.tree = new Tree();
-  this.people = new People();
+  this.zombie = new Zombie();
 
   this.index = function(x,y) {
-    return x + (y * 20);
+    return x + (y * 10);
   }
-  this.showPeople = function() {
-    this.board[ this.index(this.people.x,this.people.y) ].classList.add('people');
+  this.showZombie = function() {
+    this.board[ this.index(this.zombie.x,this.zombie.y) ].classList.add('zombie');
   }
   this.showTree = function() {
     this.board[ this.index(this.tree.x,this.tree.y) ].classList.add('tree');
@@ -38,45 +38,12 @@ var Game = function(board, man) {
   this.showMan = function() {
     this.board[ this.index(this.man.x,this.man.y) ].classList.add('man');
   }
-  // this.showWalkingMan = function() {
-  //   this.board[ this.index(this.man.x,this.man.y) ].classList.add('man_walking');
-  // }
-  // this.showStandingMan = function() {
-  //   this.board[ this.index(this.man.x,this.man.y) ].classList.add('man_standing');
-  // }
-  // this.showSittingMan = function() {
-  //   this.board[ this.index(this.man.x,this.man.y) ].classList.add('man_sitting');
-  // }
-//   this.timeout = function() {
-// if(event.type == 'keydown') {
-//     setTimeout(function() {
-//       self.hideVisibleWalkingMan();
-//       self.showStandingMan();
-//   }, 5000);
-//   setTimeout(function() {
-//     self.hideVisibleStandingMan();
-//     self.showSittingMan();
-// }, 7000);
-//     }
-// }
-  this.hideVisiblePeople = function() {
-    document.querySelector('.people').classList.remove('people');
+  this.hideVisibleZombie = function() {
+    document.querySelector('.zombie').classList.remove('zombie');
   }
   this.hideVisibleMan = function() {
     document.querySelector('.man').classList.remove('man');
   }
-  // this.hideAllVisibleWalkingMan = function() {
-  //   document.querySelector('.man_walking').classList.remove('man_walking');
-  // }
-  // this.hideVisibleWalkingMan = function() {
-  //   this.board[ this.index(this.man.x,this.man.y) ].classList.remove('man_walking');
-  // }
-  // this.hideVisibleStandingMan = function() {
-  //   this.board[ this.index(this.man.x,this.man.y) ].classList.remove('man_standing');
-  // }
-  // this.hideVisibleSittingMan = function() {
-  //   this.board[ this.index(this.man.x,this.man.y) ].classList.remove('man_sitting');
-  // }
   this.moveMan = function(event) {
       switch(event.which) {
         case 37:
@@ -92,46 +59,75 @@ var Game = function(board, man) {
         this.man.y = this.man.y + 1;
         break;
       }
+      self.stopMan();
       self.hideVisibleMan();
       self.showMan();
-      // self.hideAllVisibleWalkingMan();
-      // self.timeout();
-      // self.showWalkingMan();
       self.checkCollision();
       self.gameOver();
   }
+  this.stopMan = function() {
+    if(this.man.x > 9) {
+      this.man.x = this.man.x - 1;
+    } else if (this.man.x < 0) {
+      this.man.x = this.man.x + 1;
+    } else if (this.man.y > 9) {
+      this.man.y = this.man.y - 1;
+    } else if (this.man.y < 0) {
+      this.man.y = this.man.y + 1;
+    }
+  }
 
-
-  this.movePeople = function() {
-    if(this.people.direction === 0) {
-        this.people.x = this.people.x + 1;
+  this.moveZombie = function() {
+    if(this.zombie.direction === 0) {
+      if(this.zombie.x == 9) {
+        self.zombie.direction = 1;
+        console.log("right");
+      } else {
+        this.zombie.x = this.zombie.x + 1;
         this.moveTimeout = setTimeout(function(){
-          self.people.direction = Math.floor(Math.random() * 4);
-        },Math.floor(Math.random() * 5000))
-    } else if (this.people.direction === 1) {
-      this.people.x = this.people.x - 1;
+          self.zombie.direction = Math.floor(Math.random() * 4);
+        },Math.floor(Math.random() * 5000));
+      }
+    } else if (this.zombie.direction === 1) {
+      if (this.zombie.x == 0) {
+        self.zombie.direction = 0;
+        console.log("left");
+      } else {
+      this.zombie.x = this.zombie.x - 1;
       this.moveTimeout = setTimeout(function(){
-        self.people.direction = Math.floor(Math.random() * 4);
-      },Math.floor(Math.random() * 5000))
-    } else if (this.people.direction === 2) {
-      this.people.y = this.people.y + 1;
+        self.zombie.direction = Math.floor(Math.random() * 4);
+      },Math.floor(Math.random() * 5000));
+    }
+    } else if (this.zombie.direction === 2) {
+      if (this.zombie.y == 9) {
+        self.zombie.direction = 3;
+        console.log("bottom");
+      } else {
+      this.zombie.y = this.zombie.y + 1;
       this.moveTimeout = setTimeout(function(){
-        self.people.direction = Math.floor(Math.random() * 4);
-      },Math.floor(Math.random() * 5000))
-    } else if (this.people.direction === 3) {
-      this.people.y = this.people.y - 1;
+        self.zombie.direction = Math.floor(Math.random() * 4);
+      },Math.floor(Math.random() * 5000));
+    }
+    } else if (this.zombie.direction === 3) {
+      if (this.zombie.y == 0) {
+        self.zombie.direction = 2;
+        console.log("up");
+      } else {
+      this.zombie.y = this.zombie.y - 1;
       this.moveTimeout = setTimeout(function(){
-        self.people.direction = Math.floor(Math.random() * 4);
-      },Math.floor(Math.random() * 5000))
+        self.zombie.direction = Math.floor(Math.random() * 4);
+      },Math.floor(Math.random() * 5000));
+    }
     }
     self.gameOver();
   }
+
   this.startGame = function() {
     this.idSetInterval = setInterval(function(){
-      self.hideVisiblePeople();
-      self.showPeople();
-      self.movePeople();
-    }, 500);
+      self.hideVisibleZombie();
+      self.showZombie();
+      self.moveZombie();
+    }, 200);
   }
   this.checkCollision = function() {
     if(this.board[ this.index(this.man.x,this.man.y) ] === this.board[ this.index(this.house.x,this.house.y) ]) {
@@ -139,7 +135,7 @@ var Game = function(board, man) {
     }
   }
   this.gameOver = function() {
-      if(this.board[ this.index(this.man.x,this.man.y) ] === this.board[ this.index(this.people.x,this.people.y) ]) {
+      if(this.board[ this.index(this.man.x,this.man.y) ] === this.board[ this.index(this.zombie.x,this.zombie.y) ]) {
         clearInterval(self.idSetInterval);
         var over = document.querySelector('#over');
         var end = document.createElement('h1');
@@ -155,13 +151,10 @@ var game = new Game();
 game.showMan();
 game.showHouse();
 game.showTree();
-game.showPeople();
+game.showZombie();
 game.startGame();
 
 document.addEventListener('keydown', function(event){
-// game.hideVisibleSittingMan();
-// game.hideVisibleStandingMan();
-// game.showWalkingMan();
 game.moveMan(event);
 
   });
