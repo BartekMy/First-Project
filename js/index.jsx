@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 document.addEventListener('DOMContentLoaded', function(){
-
+let text = "Welcome Player, use Arrow-Keys to move the Recruiter on his search for the perfect Job Candidate. Watch out for the Zombie! The only save place to hide is the Job Candidates house!";
 class TextTyper extends React.Component {
   constructor(props) {
     super(props);
@@ -17,7 +17,7 @@ let length = 1;
     this.setState({
       message: this.props.text.slice(0, length)
     })
-  },150)
+  },25)
 }
 componentWillUnmount(){
       clearInterval(this.intervalId);
@@ -28,8 +28,9 @@ componentWillUnmount(){
 }
 
 class App extends React.Component {
+
   render(){
-    return <TextTyper text="Welcome Player" />
+    return <TextTyper text={text} />
   }
 }
 

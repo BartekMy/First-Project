@@ -9465,7 +9465,7 @@ document.addEventListener('DOMContentLoaded', function () {
           _react2.default.createElement(
             'a',
             { href: '#', className: 'village', onClick: this.handleOnClick },
-            'Lets go back to my village'
+            'Lets go back to Zombieville'
           ),
           _react2.default.createElement(
             'p',
@@ -9743,6 +9743,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 document.addEventListener('DOMContentLoaded', function () {
+  var text = "Welcome Player, use Arrow-Keys to move the Recruiter on his search for the perfect Job Candidate. Watch out for the Zombie! The only save place to hide is the Job Candidates house!";
+
   var TextTyper = function (_React$Component) {
     _inherits(TextTyper, _React$Component);
 
@@ -9768,7 +9770,7 @@ document.addEventListener('DOMContentLoaded', function () {
           _this2.setState({
             message: _this2.props.text.slice(0, length)
           });
-        }, 150);
+        }, 25);
       }
     }, {
       key: 'componentWillUnmount',
@@ -9801,7 +9803,7 @@ document.addEventListener('DOMContentLoaded', function () {
     _createClass(App, [{
       key: 'render',
       value: function render() {
-        return _react2.default.createElement(TextTyper, { text: 'Welcome Player' });
+        return _react2.default.createElement(TextTyper, { text: text });
       }
     }]);
 
