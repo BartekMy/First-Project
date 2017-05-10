@@ -2,6 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 document.addEventListener('DOMContentLoaded', function(){
+const homeTextHeading = "Welcome Zombie-Apocalypse Survivor!"
+const homeText = "My name is Bartosz Mylka and this is my first project as a Front-End Developer. Feel free to have a look on it but its not finished yet. In my living room and office you will find more Information about me."
+const livingRoomText = "I finished a Training or better called Bootcamp to become a Front-End Developer at Coders Lab. I learned a lot about HTML, CSS, Javascript, jQuery, ECMAScript 6, React, RWD, Sass and Git to start my new job experience."
+const livingRoomTextHeading = "Training at Coders Lab 03/2017 - 04/2017"
 
 class Footer extends React. Component {
   handleOnClick = () => {
@@ -80,13 +84,13 @@ handleOnMouseEnter3 = () => {
   render(){
     return <article className="main">
             <div id="home" onMouseEnter={this.handleOnMouseEnter1}>
-              { this.state.showTextfield_home ? <div className="textfield" /> : null }
+              { this.state.showTextfield_home ? <div className="textfield"><h1>{homeTextHeading}</h1><p>{homeText}</p></div> : null }
             </div>
             <div id="living_room" onMouseEnter={this.handleOnMouseEnter2}>
-              { this.state.showTextfield_living_room ? <div className="textfield" /> : null }
+              { this.state.showTextfield_living_room ? <div className="textfield"><h1>{livingRoomTextHeading}</h1><p>{livingRoomText}</p></div> : null }
             </div>
-            <div id="office">
-              <div id="living_room" onMouseEnter={this.handleOnMouseEnter3}>
+            <div>
+              <div id="office" onMouseEnter={this.handleOnMouseEnter3}>
                 { this.state.showTextfield_office ? <div className="textfield" /> : null }
               </div>
             </div>

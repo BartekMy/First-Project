@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 document.addEventListener('DOMContentLoaded', function(){
-let text = "Welcome Player, use Arrow-Keys to move the Recruiter on his search for the perfect Job Candidate. Watch out for the Zombie! The only save place to hide is the Job Candidates house!";
+const text = "Welcome Player, use Arrow-Keys to move the Recruiter on his search for the perfect Job Candidate. Watch out for the Zombie! The only save place to hide is the Job Candidates house!";
 class TextTyper extends React.Component {
   constructor(props) {
     super(props);

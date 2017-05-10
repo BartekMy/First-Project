@@ -9437,6 +9437,11 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 document.addEventListener('DOMContentLoaded', function () {
+  var homeTextHeading = "Welcome Zombie-Apocalypse Survivor!";
+  var homeText = "My name is Bartosz Mylka and this is my first project as a Front-End Developer. Feel free to have a look on it but its not finished yet. In my living room and office you will find more Information about me.";
+  var livingRoomText = "I finished a Training or better called Bootcamp to become a Front-End Developer at Coders Lab. I learned a lot about HTML, CSS, Javascript, jQuery, ECMAScript 6, React, RWD, Sass and Git to start my new job experience.";
+  var livingRoomTextHeading = "Training at Coders Lab 03/2017 - 04/2017";
+
   var Footer = function (_React$Component) {
     _inherits(Footer, _React$Component);
 
@@ -9642,19 +9647,45 @@ document.addEventListener('DOMContentLoaded', function () {
           _react2.default.createElement(
             'div',
             { id: 'home', onMouseEnter: this.handleOnMouseEnter1 },
-            this.state.showTextfield_home ? _react2.default.createElement('div', { className: 'textfield' }) : null
+            this.state.showTextfield_home ? _react2.default.createElement(
+              'div',
+              { className: 'textfield' },
+              _react2.default.createElement(
+                'h1',
+                null,
+                homeTextHeading
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                homeText
+              )
+            ) : null
           ),
           _react2.default.createElement(
             'div',
             { id: 'living_room', onMouseEnter: this.handleOnMouseEnter2 },
-            this.state.showTextfield_living_room ? _react2.default.createElement('div', { className: 'textfield' }) : null
+            this.state.showTextfield_living_room ? _react2.default.createElement(
+              'div',
+              { className: 'textfield' },
+              _react2.default.createElement(
+                'h1',
+                null,
+                livingRoomTextHeading
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                livingRoomText
+              )
+            ) : null
           ),
           _react2.default.createElement(
             'div',
-            { id: 'office' },
+            null,
             _react2.default.createElement(
               'div',
-              { id: 'living_room', onMouseEnter: this.handleOnMouseEnter3 },
+              { id: 'office', onMouseEnter: this.handleOnMouseEnter3 },
               this.state.showTextfield_office ? _react2.default.createElement('div', { className: 'textfield' }) : null
             )
           )
