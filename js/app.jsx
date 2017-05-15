@@ -4,10 +4,21 @@ import ReactDOM from 'react-dom';
 document.addEventListener('DOMContentLoaded', function(){
 const homeTextHeading = "Welcome Zombie-Apocalypse Survivor!"
 const livingRoomText = "I finished a Training or better called Bootcamp to become a Front-End Developer at Coders Lab. I learned a lot about HTML, CSS, Javascript, jQuery, ECMAScript 6, React, RWD, Sass and Git to start my new job experience."
-const livingRoomTextHeading = "Training at Coders Lab 03/2017 - 04/2017"
+const livingRoomTextHeading = "Training at Coders Lab  03/2017 - 04/2017"
 const livingRoomTextHeading2 = "Language"
 const livingRoomText2 = "I speak three languages. My native language German, Polish which I also speak on a native level because I grew bilingual and as you can see my English is also pretty good."
-
+const officeExperienceHeading = "Experience"
+const officeExperience1Header = "Becton Dickinson Polska Sp. z o.o.  01/2016 - 02/2017"
+const officeExperience1Text = "Customer Service Complaints Handling Representative for the GSA markets (Germany, Switzerland and Austria)"
+const officeExperience2Header = "Irkutsk State Linguistic University, Irkutsk, Russia  09/2015 - 09/2015"
+const officeExperience2Text = "Internship as a teacher of German language"
+const officeExperience3Header = "Stadtwerke Zittau GmbH, Zittau, Germany  09/2014 - 10/2014"
+const officeExperience3Text = "Interpreter (Polish – German, German – Polish)"
+const officeExperience4Header = "Bernd Jorkisch GmbH & Co. KG, Daldorf, Germany  11/2006 - 06/2011"
+const officeExperience4Text = "Dispatcher - Planing and organizing transports by road to South Germany and Europe (Forwarding and Logistics Services)."
+const officeEducationHeading = "Education"
+const officeEducationHeader = "Hochschule Zittau / Görlitz - University of Applied Sciences  09/2011 - 11/2015"
+const officeEducationText = "Ba in translation English / Polish Bachelor thesis: Software localization - General theoretical introduction and the practical implementation on the basis of chosen digital games"
 
 class Footer extends React. Component {
   handleOnClick = () => {
@@ -93,7 +104,7 @@ handleOnMouseEnter3 = () => {
             </div>
             <div>
               <div id="office" onMouseEnter={this.handleOnMouseEnter3}>
-                { this.state.showTextfield_office ? <div className="textfield" /> : null }
+                { this.state.showTextfield_office ? <div className="textfield"><h1>{officeExperienceHeading}</h1><h2>{officeExperience1Header}</h2><p>{officeExperience1Text}</p><h2>{officeExperience2Header}</h2><p>{officeExperience2Text}</p><h2>{officeExperience3Header}</h2><p>{officeExperience3Text}</p><h2>{officeExperience4Header}</h2><p>{officeExperience4Text}</p><h1>{officeEducationHeading}</h1><h2>{officeEducationHeader}</h2><p>{officeEducationText}</p></div> : null }
               </div>
             </div>
     </article>

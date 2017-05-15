@@ -9419,9 +9419,21 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 document.addEventListener('DOMContentLoaded', function () {
   var homeTextHeading = "Welcome Zombie-Apocalypse Survivor!";
   var livingRoomText = "I finished a Training or better called Bootcamp to become a Front-End Developer at Coders Lab. I learned a lot about HTML, CSS, Javascript, jQuery, ECMAScript 6, React, RWD, Sass and Git to start my new job experience.";
-  var livingRoomTextHeading = "Training at Coders Lab 03/2017 - 04/2017";
+  var livingRoomTextHeading = "Training at Coders Lab  03/2017 - 04/2017";
   var livingRoomTextHeading2 = "Language";
   var livingRoomText2 = "I speak three languages. My native language German, Polish which I also speak on a native level because I grew bilingual and as you can see my English is also pretty good.";
+  var officeExperienceHeading = "Experience";
+  var officeExperience1Header = "Becton Dickinson Polska Sp. z o.o.  01/2016 - 02/2017";
+  var officeExperience1Text = "Customer Service Complaints Handling Representative for the GSA markets (Germany, Switzerland and Austria)";
+  var officeExperience2Header = "Irkutsk State Linguistic University, Irkutsk, Russia  09/2015 - 09/2015";
+  var officeExperience2Text = "Internship as a teacher of German language";
+  var officeExperience3Header = "Stadtwerke Zittau GmbH, Zittau, Germany  09/2014 - 10/2014";
+  var officeExperience3Text = "Interpreter (Polish – German, German – Polish)";
+  var officeExperience4Header = "Bernd Jorkisch GmbH & Co. KG, Daldorf, Germany  11/2006 - 06/2011";
+  var officeExperience4Text = "Dispatcher - Planing and organizing transports by road to South Germany and Europe (Forwarding and Logistics Services).";
+  var officeEducationHeading = "Education";
+  var officeEducationHeader = "Hochschule Zittau / Görlitz - University of Applied Sciences  09/2011 - 11/2015";
+  var officeEducationText = "Ba in translation English / Polish Bachelor thesis: Software localization - General theoretical introduction and the practical implementation on the basis of chosen digital games";
 
   var Footer = function (_React$Component) {
     _inherits(Footer, _React$Component);
@@ -9700,7 +9712,70 @@ document.addEventListener('DOMContentLoaded', function () {
             _react2.default.createElement(
               'div',
               { id: 'office', onMouseEnter: this.handleOnMouseEnter3 },
-              this.state.showTextfield_office ? _react2.default.createElement('div', { className: 'textfield' }) : null
+              this.state.showTextfield_office ? _react2.default.createElement(
+                'div',
+                { className: 'textfield' },
+                _react2.default.createElement(
+                  'h1',
+                  null,
+                  officeExperienceHeading
+                ),
+                _react2.default.createElement(
+                  'h2',
+                  null,
+                  officeExperience1Header
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  officeExperience1Text
+                ),
+                _react2.default.createElement(
+                  'h2',
+                  null,
+                  officeExperience2Header
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  officeExperience2Text
+                ),
+                _react2.default.createElement(
+                  'h2',
+                  null,
+                  officeExperience3Header
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  officeExperience3Text
+                ),
+                _react2.default.createElement(
+                  'h2',
+                  null,
+                  officeExperience4Header
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  officeExperience4Text
+                ),
+                _react2.default.createElement(
+                  'h1',
+                  null,
+                  officeEducationHeading
+                ),
+                _react2.default.createElement(
+                  'h2',
+                  null,
+                  officeEducationHeader
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  officeEducationText
+                )
+              ) : null
             )
           )
         );
