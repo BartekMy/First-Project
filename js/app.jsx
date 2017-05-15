@@ -18,7 +18,7 @@ const officeExperience4Header = "Bernd Jorkisch GmbH & Co. KG, Daldorf, Germany 
 const officeExperience4Text = "Dispatcher - Planing and organizing transports by road to South Germany and Europe (Forwarding and Logistics Services)."
 const officeEducationHeading = "Education"
 const officeEducationHeader = "Hochschule Zittau / Görlitz - University of Applied Sciences  09/2011 - 11/2015"
-const officeEducationText = "Ba in translation English / Polish Bachelor thesis: Software localization - General theoretical introduction and the practical implementation on the basis of chosen digital games"
+const officeEducationText = "BA in translation English / Polish Bachelor thesis: Software localization - General theoretical introduction and the practical implementation on the basis of chosen digital games"
 
 class Footer extends React. Component {
   handleOnClick = () => {
@@ -97,7 +97,7 @@ handleOnMouseEnter3 = () => {
   render(){
     return <article className="main">
             <div id="home" onMouseEnter={this.handleOnMouseEnter1}>
-              { this.state.showTextfield_home ? <div className="textfield"><h1>{homeTextHeading}</h1><p>My name is Bartosz Mylka and this is my first project as a Front-End Developer. Feel free to have a look on it but its not finished yet. In my <a href="#living_room">living room</a> and <a href="#office">office</a> you will find more Information about me.</p></div> : null }
+              { this.state.showTextfield_home ? <div className="textfield"><h1>{homeTextHeading}</h1><p>My name is Bartosz Mylka and this is my first project as a Front-End Developer. Feel free to have a look on it but its not finished yet. In my <a href="#living_room">living room</a> and <a href="#office">office</a> you will find more Information about me. You can also download my CV in <a download href="./pdf/Bartosz_Mylka_CV_ENG.pdf">English</a>, <a download href="./pdf/Bartosz_Mylka_CV_DE.pdf">German</a> or <a download href="./pdf/Bartosz_Mylka_CV_PL.pdf">Polish</a>.</p></div> : null }
             </div>
             <div id="living_room" onMouseEnter={this.handleOnMouseEnter2}>
               { this.state.showTextfield_living_room ? <div className="textfield"><h1>{livingRoomTextHeading}</h1><p>{livingRoomText}</p><h2>{livingRoomTextHeading2}</h2><p>{livingRoomText2}</p><h3>Check out my <a href="#office">My Office</a> to find more about my previous job experience and education.</h3></div> : null }
