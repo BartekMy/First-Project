@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom';
 
 document.addEventListener('DOMContentLoaded', function(){
 const homeTextHeading = "Welcome Zombie-Apocalypse Survivor!"
-const homeText = "My name is Bartosz Mylka and this is my first project as a Front-End Developer. Feel free to have a look on it but its not finished yet. In my living room and office you will find more Information about me."
 const livingRoomText = "I finished a Training or better called Bootcamp to become a Front-End Developer at Coders Lab. I learned a lot about HTML, CSS, Javascript, jQuery, ECMAScript 6, React, RWD, Sass and Git to start my new job experience."
 const livingRoomTextHeading = "Training at Coders Lab 03/2017 - 04/2017"
+const livingRoomTextHeading2 = "Language"
+const livingRoomText2 = "I speak three languages. My native language German, Polish which I also speak on a native level because I grew bilingual and as you can see my English is also pretty good."
+
 
 class Footer extends React. Component {
   handleOnClick = () => {
@@ -84,10 +86,10 @@ handleOnMouseEnter3 = () => {
   render(){
     return <article className="main">
             <div id="home" onMouseEnter={this.handleOnMouseEnter1}>
-              { this.state.showTextfield_home ? <div className="textfield"><h1>{homeTextHeading}</h1><p>{homeText}</p></div> : null }
+              { this.state.showTextfield_home ? <div className="textfield"><h1>{homeTextHeading}</h1><p>My name is Bartosz Mylka and this is my first project as a Front-End Developer. Feel free to have a look on it but its not finished yet. In my <a href="#living_room">living room</a> and <a href="#office">office</a> you will find more Information about me.</p></div> : null }
             </div>
             <div id="living_room" onMouseEnter={this.handleOnMouseEnter2}>
-              { this.state.showTextfield_living_room ? <div className="textfield"><h1>{livingRoomTextHeading}</h1><p>{livingRoomText}</p></div> : null }
+              { this.state.showTextfield_living_room ? <div className="textfield"><h1>{livingRoomTextHeading}</h1><p>{livingRoomText}</p><h2>{livingRoomTextHeading2}</h2><p>{livingRoomText2}</p><h3>Check out my <a href="#office">My Office</a> to find more about my previous job experience and education.</h3></div> : null }
             </div>
             <div>
               <div id="office" onMouseEnter={this.handleOnMouseEnter3}>
