@@ -9702,6 +9702,13 @@ document.addEventListener('DOMContentLoaded', function () {
                   'Polish'
                 ),
                 '.'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'flags' },
+                _react2.default.createElement('div', { className: 'uk' }),
+                _react2.default.createElement('div', { className: 'germany' }),
+                _react2.default.createElement('div', { className: 'poland' })
               )
             ) : null
           ),

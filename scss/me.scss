@@ -75,7 +75,43 @@ body {
   background-position: center;
   height: 100vh;
 }
-
+.flags {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.uk {
+  text-align: left;
+  background: url("../images/UK.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 250px;
+}
+.germany {
+  text-align: left;
+  background: url("../images/Germany.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 250px;
+}
+.poland {
+  text-align: left;
+  background: url("../images/Poland.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 250px;
+}
 .aside {
   background: white;
 }
