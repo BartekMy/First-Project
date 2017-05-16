@@ -43,6 +43,23 @@ body {
   color: black;
 }
 
+.textfield {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  width: 100%;
+  display: block;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
 #home {
   text-align: left;
   background: url("../images/home.jpg");
@@ -51,12 +68,6 @@ body {
   background-position: center;
   height: 100vh;
   margin-bottom: 10px;
-}
-
-.textfield {
-  background-color: rgba(255, 255, 255, 0.5);
-  height: 100vh;
-  display: block;
 }
 
 #living_room {
@@ -84,38 +95,66 @@ body {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin: 10px;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+  height: 60%;
+  width: 100%;
 }
 
 .uk {
-  text-align: left;
   background: url("../images/UK.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  height: 250px;
-  width: 250px;
+  height: 30%;
+  width: 30%;
+}
+
+.uk:hover {
+  background: url("../images/UK.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 33%;
+  width: 33%;
 }
 
 .germany {
-  text-align: left;
   background: url("../images/Germany.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  height: 250px;
-  width: 250px;
+  height: 30%;
+  width: 30%;
+}
+
+.germany:hover {
+  background: url("../images/Germany.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 33%;
+  width: 33%;
 }
 
 .poland {
-  text-align: left;
   background: url("../images/Poland.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  height: 250px;
-  width: 250px;
+  height: 30%;
+  width: 30%;
+}
+
+.poland:hover {
+  background: url("../images/Poland.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-height: 33%;
+  min-width: 33%;
 }
 
 .aside {
@@ -140,6 +179,10 @@ body {
   }
   .footer {
     order: 3;
+  }
+  .flags {
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
   }
 }
 
