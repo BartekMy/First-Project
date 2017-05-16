@@ -9683,32 +9683,14 @@ document.addEventListener('DOMContentLoaded', function () {
                   { href: '#office' },
                   'office'
                 ),
-                ' you will find more Information about me. You can also download my CV in ',
-                _react2.default.createElement(
-                  'a',
-                  { download: true, href: './pdf/Bartosz_Mylka_CV_ENG.pdf' },
-                  'English'
-                ),
-                ', ',
-                _react2.default.createElement(
-                  'a',
-                  { download: true, href: './pdf/Bartosz_Mylka_CV_DE.pdf' },
-                  'German'
-                ),
-                ' or ',
-                _react2.default.createElement(
-                  'a',
-                  { download: true, href: './pdf/Bartosz_Mylka_CV_PL.pdf' },
-                  'Polish'
-                ),
-                '.'
+                ' you will find more Information about me. You can also download my CV in English, German or Polish. Just click on one of the flags.'
               ),
               _react2.default.createElement(
                 'div',
                 { className: 'flags' },
-                _react2.default.createElement('div', { className: 'uk' }),
-                _react2.default.createElement('div', { className: 'germany' }),
-                _react2.default.createElement('div', { className: 'poland' })
+                _react2.default.createElement('a', { className: 'uk', download: true, href: './pdf/Bartosz_Mylka_CV_ENG.pdf' }),
+                _react2.default.createElement('a', { className: 'germany', download: true, href: './pdf/Bartosz_Mylka_CV_DE.pdf' }),
+                _react2.default.createElement('a', { className: 'poland', download: true, href: './pdf/Bartosz_Mylka_CV_PL.pdf' })
               )
             ) : null
           ),
