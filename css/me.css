@@ -87,6 +87,16 @@ body {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  margin-bottom: 10px;
+}
+
+#contact {
+  text-align: left;
+  background: url("../images/contact.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 .flags {

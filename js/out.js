@@ -9550,7 +9550,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 null,
                 _react2.default.createElement(
                   'a',
-                  { href: '#' },
+                  { href: '#contact' },
                   'Contact'
                 )
               )
@@ -9640,6 +9640,12 @@ document.addEventListener('DOMContentLoaded', function () {
       _this3.handleOnMouseEnter3 = function () {
         _this3.setState({
           showTextfield_office: true
+        });
+      };
+
+      _this3.handleOnMouseEnter4 = function () {
+        _this3.setState({
+          showTextfield_contact: true
         });
       };
 
@@ -9811,6 +9817,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 officeEducationText
               )
             ) : null
+          ),
+          _react2.default.createElement(
+            'div',
+            { id: 'contact', onMouseEnter: this.handleOnMouseEnter4 },
+            this.state.showTextfield_contact ? _react2.default.createElement('div', { className: 'textfield' }) : null
           )
         );
       }
