@@ -153,8 +153,81 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  min-height: 33%;
-  min-width: 33%;
+  height: 33%;
+  width: 33%;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  height: 10%;
+  width: 100%;
+}
+
+.html {
+  background: url("../images/html5.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100%;
+  width: 20%;
+}
+
+.css {
+  background: url("../images/css3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100%;
+  width: 20%;
+}
+
+.js {
+  background: url("../images/js.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100%;
+  width: 20%;
+}
+
+.jQuery {
+  background: url("../images/jQuery.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100%;
+  width: 20%;
+}
+
+.react {
+  background: url("../images/react.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100%;
+  width: 20%;
+}
+
+.sass {
+  background: url("../images/sass.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100%;
+  width: 20%;
+}
+
+.git {
+  background: url("../images/git.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100%;
+  width: 20%;
 }
 
 .aside {

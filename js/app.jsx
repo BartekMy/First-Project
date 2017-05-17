@@ -100,13 +100,11 @@ handleOnMouseEnter3 = () => {
               { this.state.showTextfield_home ? <div className="textfield"><h1>{homeTextHeading}</h1><p>My name is Bartosz Mylka and this is my first project as a Front-End Developer. Feel free to have a look on it but its not finished yet. In my <a href="#living_room">living room</a> and <a href="#office">office</a> you will find more Information about me. You can also download my CV in English, German or Polish. Just click on one of the flags.</p><div className="flags"><a className="uk" download href="./pdf/Bartosz_Mylka_CV_ENG.pdf"/><a className="germany" download href="./pdf/Bartosz_Mylka_CV_DE.pdf"/><a className="poland" download href="./pdf/Bartosz_Mylka_CV_PL.pdf"/></div></div> : null }
             </div>
             <div id="living_room" onMouseEnter={this.handleOnMouseEnter2}>
-              { this.state.showTextfield_living_room ? <div className="textfield"><h1>{livingRoomTextHeading}</h1><p>{livingRoomText}</p><h2>{livingRoomTextHeading2}</h2><p>{livingRoomText2}</p><h3>Check out my <a href="#office">My Office</a> to find more about my previous job experience and education.</h3></div> : null }
+              { this.state.showTextfield_living_room ? <div className="textfield"><h1>{livingRoomTextHeading}</h1><div className="icons"><div className="html"/><div className="css"/><div className="js"/><div className="jQuery"/><div className="react"/><div className="sass"/><div className="git"/></div><p>{livingRoomText}</p><h2>{livingRoomTextHeading2}</h2><p>{livingRoomText2}</p><h3>Check out my <a href="#office">My Office</a> to find more about my previous job experience and education.</h3></div> : null }
             </div>
-            <div>
               <div id="office" onMouseEnter={this.handleOnMouseEnter3}>
                 { this.state.showTextfield_office ? <div className="textfield"><h1>{officeExperienceHeading}</h1><h2>{officeExperience1Header}</h2><p>{officeExperience1Text}</p><h2>{officeExperience2Header}</h2><p>{officeExperience2Text}</p><h2>{officeExperience3Header}</h2><p>{officeExperience3Text}</p><h2>{officeExperience4Header}</h2><p>{officeExperience4Text}</p><h1>{officeEducationHeading}</h1><h2>{officeEducationHeader}</h2><p>{officeEducationText}</p></div> : null }
               </div>
-            </div>
     </article>
   }
 }

@@ -9706,6 +9706,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 livingRoomTextHeading
               ),
               _react2.default.createElement(
+                'div',
+                { className: 'icons' },
+                _react2.default.createElement('div', { className: 'html' }),
+                _react2.default.createElement('div', { className: 'css' }),
+                _react2.default.createElement('div', { className: 'js' }),
+                _react2.default.createElement('div', { className: 'jQuery' }),
+                _react2.default.createElement('div', { className: 'react' }),
+                _react2.default.createElement('div', { className: 'sass' }),
+                _react2.default.createElement('div', { className: 'git' })
+              ),
+              _react2.default.createElement(
                 'p',
                 null,
                 livingRoomText
@@ -9735,75 +9746,71 @@ document.addEventListener('DOMContentLoaded', function () {
           ),
           _react2.default.createElement(
             'div',
-            null,
-            _react2.default.createElement(
+            { id: 'office', onMouseEnter: this.handleOnMouseEnter3 },
+            this.state.showTextfield_office ? _react2.default.createElement(
               'div',
-              { id: 'office', onMouseEnter: this.handleOnMouseEnter3 },
-              this.state.showTextfield_office ? _react2.default.createElement(
-                'div',
-                { className: 'textfield' },
-                _react2.default.createElement(
-                  'h1',
-                  null,
-                  officeExperienceHeading
-                ),
-                _react2.default.createElement(
-                  'h2',
-                  null,
-                  officeExperience1Header
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  officeExperience1Text
-                ),
-                _react2.default.createElement(
-                  'h2',
-                  null,
-                  officeExperience2Header
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  officeExperience2Text
-                ),
-                _react2.default.createElement(
-                  'h2',
-                  null,
-                  officeExperience3Header
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  officeExperience3Text
-                ),
-                _react2.default.createElement(
-                  'h2',
-                  null,
-                  officeExperience4Header
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  officeExperience4Text
-                ),
-                _react2.default.createElement(
-                  'h1',
-                  null,
-                  officeEducationHeading
-                ),
-                _react2.default.createElement(
-                  'h2',
-                  null,
-                  officeEducationHeader
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  officeEducationText
-                )
-              ) : null
-            )
+              { className: 'textfield' },
+              _react2.default.createElement(
+                'h1',
+                null,
+                officeExperienceHeading
+              ),
+              _react2.default.createElement(
+                'h2',
+                null,
+                officeExperience1Header
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                officeExperience1Text
+              ),
+              _react2.default.createElement(
+                'h2',
+                null,
+                officeExperience2Header
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                officeExperience2Text
+              ),
+              _react2.default.createElement(
+                'h2',
+                null,
+                officeExperience3Header
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                officeExperience3Text
+              ),
+              _react2.default.createElement(
+                'h2',
+                null,
+                officeExperience4Header
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                officeExperience4Text
+              ),
+              _react2.default.createElement(
+                'h1',
+                null,
+                officeEducationHeading
+              ),
+              _react2.default.createElement(
+                'h2',
+                null,
+                officeEducationHeader
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                officeEducationText
+              )
+            ) : null
           )
         );
       }
