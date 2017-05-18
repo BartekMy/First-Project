@@ -286,6 +286,7 @@ body {
 .navigation li:last-of-type a {
     border-bottom: none;
 }
+
 .adress {
   display: -webkit-box;
   display: -moz-box;
@@ -295,7 +296,27 @@ body {
   // justify-content: center;
   align-items: center;
   margin: 10px;
+
+  animation: flying;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-direction: ease-in-out;
+  animation-fill-mode: forwards;
+
+  position: relative;
 }
+
+@keyframes flying {
+0% {
+  top: 0;
+  left: 0;
+}
+100% {
+  top:0vh;
+  left: 30vw;
+}
+}
+
 .pin {
   background: url("../images/pin.png");
   background-repeat: no-repeat;
@@ -314,7 +335,27 @@ body {
   // justify-content: center;
   align-items: center;
   margin: 10px;
+
+  animation: flying;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-direction: ease-in-out;
+  animation-fill-mode: forwards;
+
+  position: relative;
 }
+
+@keyframes flying {
+0% {
+  top: 0;
+  left: 0;
+}
+100% {
+  top:0vh;
+  left: 30vw;
+}
+}
+
 .gmail {
   background: url("../images/gmail.png");
   background-repeat: no-repeat;
@@ -333,7 +374,27 @@ body {
   // justify-content: center;
   align-items: center;
   margin: 10px;
+
+  animation: flying;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-direction: ease-in-out;
+  animation-fill-mode: forwards;
+
+  position: relative;
 }
+
+@keyframes flying {
+0% {
+  top: 0;
+  left: 0;
+}
+100% {
+  top:0vh;
+  left: 30vw;
+}
+}
+
 .li_icon {
   background: url("../images/linkedin.png");
   background-repeat: no-repeat;
@@ -352,7 +413,27 @@ body {
   // justify-content: center;
   align-items: center;
   margin: 10px;
+
+  animation: flying;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-direction: ease-in-out;
+  animation-fill-mode: forwards;
+
+  position: relative;
 }
+
+@keyframes flying {
+0% {
+  top: 0;
+  left: 0;
+}
+100% {
+  top:0vh;
+  left: 30vw;
+}
+}
+
 .number {
   background: url("../images/number.png");
   background-repeat: no-repeat;
@@ -371,7 +452,27 @@ body {
   // justify-content: center;
   align-items: center;
   margin: 10px;
+
+  animation: flying;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-direction: ease-in-out;
+  animation-fill-mode: forwards;
+
+  position: relative;
 }
+
+@keyframes flying {
+0% {
+  top: 0;
+  left: 0;
+}
+100% {
+  top:0vh;
+  left: 30vw;
+}
+}
+
 .gh_icon {
   background: url("../images/github.png");
   background-repeat: no-repeat;

@@ -74,7 +74,8 @@ constructor(props){
     this.state = {
       showTextfield_home: false,
       showTextfield_living_room: false,
-      showTextfield_office: false
+      showTextfield_office: false,
+      showTextfield_contact: false
     }
   }
 
