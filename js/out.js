@@ -9550,7 +9550,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 null,
                 _react2.default.createElement(
                   'a',
-                  { href: '#contact' },
+                  { className: 'contactBtn', href: '#contact' },
                   'Contact'
                 )
               )
@@ -9649,10 +9649,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       };
 
+      _this3.handleOnMouseClick4 = function () {
+        _this3.setState({
+          showTextfield_contact: true
+        });
+      };
+
       _this3.state = {
         showTextfield_home: false,
         showTextfield_living_room: false,
-        showTextfield_office: false
+        showTextfield_office: false,
+        showTextfield_contact: false
       };
       return _this3;
     }
@@ -9820,7 +9827,7 @@ document.addEventListener('DOMContentLoaded', function () {
           ),
           _react2.default.createElement(
             'div',
-            { id: 'contact', onMouseEnter: this.handleOnMouseEnter4 },
+            { id: 'contact', onClick: this.handleOnMouseClick4, onMouseEnter: this.handleOnMouseEnter4 },
             this.state.showTextfield_contact ? _react2.default.createElement('div', { className: 'textfield' }) : null
           )
         );

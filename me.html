@@ -9,5 +9,17 @@
 
     <div id="app"></div>
     <script src="js/out.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script>
+      $(document).ready(function(){
+          $(".contactBtn").click(function(){
+              $(".adress").animate({left: '125%', fontSize: '1.5em'});
+              $(".email").animate({left: '150%', fontSize: '1.5em'});
+              $(".linkedin").animate({left: '200%', fontSize: '1.5em'});
+              $(".phone").animate({left: '175%', fontSize: '1.5em'});
+              $(".github").animate({left: '225%', fontSize: '1.5em'});
+          });
+      });
+      </script>
 </body>
 </html>

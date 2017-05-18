@@ -41,7 +41,7 @@ class Navigation extends React.Component {
               <li><a href="#home">Home</a></li>
               <li><a href="#living_room">Living Room</a></li>
               <li><a href="#office">My Office</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a className="contactBtn" href="#contact">Contact</a></li>
             </ul>
             <div className="adress">
             <div className="pin" />
@@ -100,6 +100,11 @@ handleOnMouseEnter4 = () => {
     showTextfield_contact: true
   })
 }
+handleOnMouseClick4 = () => {
+  this.setState({
+    showTextfield_contact: true
+  })
+}
   render(){
     return <article className="main">
             <div id="home" onMouseEnter={this.handleOnMouseEnter1}>
@@ -111,7 +116,7 @@ handleOnMouseEnter4 = () => {
               <div id="office" onMouseEnter={this.handleOnMouseEnter3}>
                 { this.state.showTextfield_office ? <div className="textfield"><h1>{officeExperienceHeading}</h1><h2>{officeExperience1Header}</h2><p>{officeExperience1Text}</p><h2>{officeExperience2Header}</h2><p>{officeExperience2Text}</p><h2>{officeExperience3Header}</h2><p>{officeExperience3Text}</p><h2>{officeExperience4Header}</h2><p>{officeExperience4Text}</p><h1>{officeEducationHeading}</h1><h2>{officeEducationHeader}</h2><p>{officeEducationText}</p></div> : null }
               </div>
-              <div id="contact" onMouseEnter={this.handleOnMouseEnter4}>{ this.state.showTextfield_contact ? <div className="textfield"></div> : null }
+              <div id="contact" onClick={this.handleOnMouseClick4} onMouseEnter={this.handleOnMouseEnter4}>{ this.state.showTextfield_contact ? <div className="textfield"></div> : null }
               </div>
     </article>
   }

@@ -297,24 +297,7 @@ body {
   align-items: center;
   margin: 10px;
 
-  animation: flying;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  animation-direction: ease-in-out;
-  animation-fill-mode: forwards;
-
   position: relative;
-}
-
-@keyframes flying {
-0% {
-  top: 0;
-  left: 0;
-}
-100% {
-  top:0vh;
-  left: 30vw;
-}
 }
 
 .pin {
@@ -336,24 +319,7 @@ body {
   align-items: center;
   margin: 10px;
 
-  animation: flying;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  animation-direction: ease-in-out;
-  animation-fill-mode: forwards;
-
   position: relative;
-}
-
-@keyframes flying {
-0% {
-  top: 0;
-  left: 0;
-}
-100% {
-  top:0vh;
-  left: 30vw;
-}
 }
 
 .gmail {
@@ -375,24 +341,7 @@ body {
   align-items: center;
   margin: 10px;
 
-  animation: flying;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  animation-direction: ease-in-out;
-  animation-fill-mode: forwards;
-
   position: relative;
-}
-
-@keyframes flying {
-0% {
-  top: 0;
-  left: 0;
-}
-100% {
-  top:0vh;
-  left: 30vw;
-}
 }
 
 .li_icon {
@@ -414,24 +363,7 @@ body {
   align-items: center;
   margin: 10px;
 
-  animation: flying;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  animation-direction: ease-in-out;
-  animation-fill-mode: forwards;
-
   position: relative;
-}
-
-@keyframes flying {
-0% {
-  top: 0;
-  left: 0;
-}
-100% {
-  top:0vh;
-  left: 30vw;
-}
 }
 
 .number {
@@ -453,24 +385,7 @@ body {
   align-items: center;
   margin: 10px;
 
-  animation: flying;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  animation-direction: ease-in-out;
-  animation-fill-mode: forwards;
-
   position: relative;
-}
-
-@keyframes flying {
-0% {
-  top: 0;
-  left: 0;
-}
-100% {
-  top:0vh;
-  left: 30vw;
-}
 }
 
 .gh_icon {
