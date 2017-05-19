@@ -1,5 +1,5 @@
 module.exports = {
-  entry: ["./js/index.jsx", "./js/app.jsx"],
+  entry: ["./js/index.jsx", "./js/app.jsx", "./js/partOne/game.js"],
   output: {
     filename: "./js/out.js"
   },

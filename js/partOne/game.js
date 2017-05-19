@@ -1,21 +1,9 @@
-var Man = function(x, y) {
-  this.x = 9;
-  this.y = 9;
-}
-var House = function(x, y) {
-  this.x = Math.floor(Math.random() * 10);
-  this.y = Math.floor(Math.random() * 10);
-}
-var Tree = function(x, y) {
-  this.x = Math.floor(Math.random() * 10);
-  this.y = Math.floor(Math.random() * 10);
-}
-var Zombie = function(x, y, direction) {
-  this.x = Math.floor(Math.random() * 10);
-  this.y = Math.floor(Math.random() * 10);
-  this.direction = Math.floor(Math.random() * 4);
-}
-var Game = function(board, man) {
+var Man = require('./man');
+var House = require('./house');
+var Tree = require('./tree');
+var Zombie = require('./zombie');
+
+var Game = function() {
   var self = this;
   this.board = document.querySelectorAll('#board div');
   this.man = new Man();

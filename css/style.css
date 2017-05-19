@@ -24,49 +24,28 @@ body {
 }
 
 .man {
-  background-image: url("../images/man.png");
-  background-repeat: no-repeat;
-  background-size: 100;
-  background-position: center;
-}
-
-.man_walking {
-  background-image: url("../images/man_walking.png");
-  background-repeat: no-repeat;
-  background-size: 100;
-  background-position: center;
-}
-
-.man_standing {
-  background-image: url("../images/man_standing.png");
-  background-repeat: no-repeat;
-  background-size: 100;
-  background-position: center;
-}
-
-.man_sitting {
-  background-image: url("../images/man_sitting.png");
+  background-image: url("../images/partOne/man.png");
   background-repeat: no-repeat;
   background-size: 100;
   background-position: center;
 }
 
 .house {
-  background-image: url("../images/house.png");
+  background-image: url("../images/partOne/house.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
 .tree {
-  background-image: url("../images/tree.png");
+  background-image: url("../images/partOne/tree.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
 .zombie {
-  background-image: url("../images/zombie.png");
+  background-image: url("../images/partOne/zombie.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
