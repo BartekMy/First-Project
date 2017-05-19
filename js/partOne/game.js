@@ -135,14 +135,4 @@ var Game = function() {
     }
 }
 
-var game = new Game();
-game.showMan();
-game.showHouse();
-game.showTree();
-game.showZombie();
-game.startGame();
-
-document.addEventListener('keydown', function(event){
-game.moveMan(event);
-
-  });
+module.exports = Game;
