@@ -9417,17 +9417,20 @@ module.exports = __webpack_require__(19);
 
 var Game = __webpack_require__(84);
 
+document.getElementById("start").addEventListener("click", startFunction);
+
+function startFunction() {
 var newGame = new Game();
 newGame.showMan();
 newGame.showHouse();
 newGame.showTree();
 newGame.showZombie();
 newGame.startGame();
-
 document.addEventListener('keydown', function(event){
 newGame.moveMan(event);
-
-  });
+});
+this.disabled = true;
+}
 
 
 /***/ }),
@@ -9565,7 +9568,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var officeExperience3Header = "Stadtwerke Zittau GmbH, Zittau, Germany  09/2014 - 10/2014";
   var officeExperience3Text = "Interpreter (Polish – German, German – Polish)";
   var officeExperience4Header = "Bernd Jorkisch GmbH & Co. KG, Daldorf, Germany  11/2006 - 06/2011";
-  var officeExperience4Text = "Dispatcher - Planing and organizing transports by road to South Germany and Europe (Forwarding and Logistics Services).";
+  var officeExperience4Text = "Dispatcher - Planning and organizing transports by road to South Germany and Europe (Forwarding and Logistics Services).";
   var officeEducationHeading = "Education";
   var officeEducationHeader = "Hochschule Zittau / Görlitz - University of Applied Sciences  09/2011 - 11/2015";
   var officeEducationText = "BA in translation English / Polish Bachelor thesis: Software localization - General theoretical introduction and the practical implementation on the basis of chosen digital games";

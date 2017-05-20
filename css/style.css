@@ -7,7 +7,7 @@ body {
   padding: 0;
   background-color: white;
   font-family: 'Press Start 2P', cursive;
-  font-size: 75%;
+  font-size: 50%;
 }
 
 #board {
@@ -80,5 +80,20 @@ section#over pre {
 .invisible {
   display: none;
 }
+
+#start {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 43vw;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+}
+
 
 /*# sourceMappingURL=../maps/style.css.map */
