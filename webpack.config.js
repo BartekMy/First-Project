@@ -3,10 +3,10 @@ module.exports = {
   output: {
     filename: "./js/out2.js"
   },
-  // entry: ["./js/partOne/app.js", "./js/partOne/typer.jsx"],
-  // output: {
-  //   filename: "./js/out.js"
-  // },
+  entry: ["./js/partOne/app.js", "./js/partOne/typer.jsx"],
+  output: {
+    filename: "./js/out.js"
+  },
   devServer: {
     inline: true,
     contentBase: './',
