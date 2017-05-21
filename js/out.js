@@ -9940,7 +9940,64 @@ document.addEventListener('DOMContentLoaded', function () {
           _react2.default.createElement(
             'div',
             { id: 'contact', onMouseEnter: this.handleOnMouseEnter4 },
-            this.state.showTextfield_contact ? _react2.default.createElement('div', { className: 'textfield' }) : null
+            this.state.showTextfield_contact ? _react2.default.createElement(
+              'div',
+              { className: 'textfield' },
+              _react2.default.createElement(
+                'div',
+                { className: 'adress' },
+                _react2.default.createElement('div', { className: 'pin' }),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Bartosz Mylka',
+                  _react2.default.createElement('br', null),
+                  'ul. Przestrzenna 41/2',
+                  _react2.default.createElement('br', null),
+                  '50-534 Wroclaw'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'email' },
+                _react2.default.createElement('div', { className: 'gmail' }),
+                _react2.default.createElement(
+                  'a',
+                  { href: 'mailto:bmylka@gmail.com' },
+                  'bmylka@gmail.com'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'phone' },
+                _react2.default.createElement('div', { className: 'number' }),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  '+48 504 505 230'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'li_icon' },
+                _react2.default.createElement('div', { className: 'linkedin' }),
+                _react2.default.createElement(
+                  'a',
+                  { href: 'https://linkedin.com/in/bartosz-mylka' },
+                  'linkedin.com/in/bartosz-mylka'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'gh_icon' },
+                _react2.default.createElement('div', { className: 'github' }),
+                _react2.default.createElement(
+                  'a',
+                  { href: 'https://github.com/BartekMy' },
+                  'github.com/BartekMy'
+                )
+              )
+            ) : null
           )
         );
       }

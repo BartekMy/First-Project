@@ -112,7 +112,26 @@ handleOnMouseEnter4 = () => {
               <div id="office" onMouseEnter={this.handleOnMouseEnter3}>
                 { this.state.showTextfield_office ? <div className="textfield"><h1>{officeExperienceHeading}</h1><h2>{officeExperience1Header}</h2><p>{officeExperience1Text}</p><h2>{officeExperience2Header}</h2><p>{officeExperience2Text}</p><h2>{officeExperience3Header}</h2><p>{officeExperience3Text}</p><h2>{officeExperience4Header}</h2><p>{officeExperience4Text}</p><h1>{officeEducationHeading}</h1><h2>{officeEducationHeader}</h2><p>{officeEducationText}</p></div> : null }
               </div>
-              <div id="contact" onMouseEnter={this.handleOnMouseEnter4}>{ this.state.showTextfield_contact ? <div className="textfield"></div> : null }
+              <div id="contact" onMouseEnter={this.handleOnMouseEnter4}>{ this.state.showTextfield_contact ? <div className="textfield"><div className="adress">
+              <div className="pin" />
+              <p>Bartosz Mylka<br/>ul. Przestrzenna 41/2<br/>50-534 Wroclaw</p>
+              </div>
+              <div className="email">
+              <div className="gmail" />
+              <a href="mailto:bmylka@gmail.com">bmylka@gmail.com</a>
+              </div>
+              <div className="phone">
+              <div className="number" />
+              <p>+48 504 505 230</p>
+              </div>
+              <div className="li_icon">
+              <div className="linkedin" />
+              <a href="https://linkedin.com/in/bartosz-mylka">linkedin.com/in/bartosz-mylka</a>
+              </div>
+              <div className="gh_icon">
+              <div className="github" />
+              <a href="https://github.com/BartekMy">github.com/BartekMy</a>
+              </div></div> : null }
               </div>
     </article>
   }
