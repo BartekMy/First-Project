@@ -119,7 +119,7 @@ var Game = function() {
   }
   this.checkCollision = function() {
     if(this.board[ this.index(this.man.x,this.man.y) ] === this.board[ this.index(this.house.x,this.house.y) ]) {
-      window.location = "../First-Project/me.html";
+      document.location = "../First-Project/me.html";
     }
   }
   this.gameOver = function() {
