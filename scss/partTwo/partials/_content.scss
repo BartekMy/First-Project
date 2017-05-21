@@ -1,0 +1,134 @@
+.textfield {
+  background-color: rgba(255,255,255,0.5);
+  height: 100%;
+  width: 100%;
+  display: block;
+  text-align: center;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+@each $main_picture in home, living_room, office, contact {
+##{$main_picture} {
+  background: url("../images/partTwo/#{$main_picture}.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-bottom: 10px;
+  }
+}
+
+#living_room {
+  @extend #home;
+}
+
+#office {
+  @extend #home;
+}
+
+#contact {
+  @extend #home;
+  margin-bottom: 0px;
+}
+
+.flags {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+
+  height: 60%;
+  width: 100%;
+  @each $flag_icon in uk, germany, poland {
+  .#{$flag_icon} {
+    background: url("../images/partTwo/#{$flag_icon}.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 30%;
+    width: 30%;
+    &:hover {
+      height: 33%;
+      width: 33%;
+    }
+  }
+}
+  .germany {
+    @extend .uk;
+  }
+  .poland {
+    @extend .uk;
+  }
+}
+
+.icons {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  // justify-content: center;
+  // align-items: center;
+
+  height: 10%;
+  width: 100%;
+  @each $dev_icon in html5, css3, js, jQuery, react, sass, git {
+  .#{$dev_icon} {
+    background: url("../images/partTwo/#{$dev_icon}.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+    width: 20%;
+  }
+}
+  .css3 {
+    @extend .html5;
+  }
+  .js {
+    @extend .html5;
+  }
+  .jQuery {
+    @extend .html5;
+  }
+  .react {
+    @extend .html5;
+  }
+  .sass {
+    @extend .html5;
+  }
+  .git {
+    @extend .html5;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0px; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside { order: 1; }
+  .main    { order: 2; }
+  .footer  { order: 3; }
+  .flags {
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+}

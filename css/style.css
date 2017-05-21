@@ -82,18 +82,17 @@ section#over pre {
 }
 
 #start {
-    background-color: black;
-    border: 2px solid white;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin-left: 43vw;
-    cursor: pointer;
-    font-family: 'Press Start 2P', cursive;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 43vw;
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
 }
-
 
 /*# sourceMappingURL=../maps/style.css.map */

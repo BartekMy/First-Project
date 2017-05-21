@@ -1,0 +1,19 @@
+.footer {
+  background: black;
+  color: white;
+  .copy {
+    float: right;
+  }
+  .village {
+    float: left;
+    text-decoration: none;
+    color: white;
+  }
+  &:hover {
+    background: white;
+    color: black;
+    a {
+      color: black;
+    }
+  }
+}

@@ -7,7 +7,7 @@ gulp.task('tusk', function() {
 });
 
 gulp.task('sass', function() {
-            return gulp.src(['scss/style.scss', 'scss/me.scss'])
+            return gulp.src(['scss/partOne/style.scss', 'scss/partTwo/me.scss'])
                 .pipe(sourcemaps.init())
                 .pipe(sass({
                     errLogToConsole: true,

@@ -9709,8 +9709,8 @@ document.addEventListener('DOMContentLoaded', function () {
             ),
             _react2.default.createElement(
               'div',
-              { className: 'linkedin' },
-              _react2.default.createElement('div', { className: 'li_icon' }),
+              { className: 'li_icon' },
+              _react2.default.createElement('div', { className: 'linkedin' }),
               _react2.default.createElement(
                 'a',
                 { href: 'https://linkedin.com/in/bartosz-mylka' },
@@ -9719,8 +9719,8 @@ document.addEventListener('DOMContentLoaded', function () {
             ),
             _react2.default.createElement(
               'div',
-              { className: 'github' },
-              _react2.default.createElement('div', { className: 'gh_icon' }),
+              { className: 'gh_icon' },
+              _react2.default.createElement('div', { className: 'github' }),
               _react2.default.createElement(
                 'a',
                 { href: 'https://github.com/BartekMy' },
@@ -9833,8 +9833,8 @@ document.addEventListener('DOMContentLoaded', function () {
               _react2.default.createElement(
                 'div',
                 { className: 'icons' },
-                _react2.default.createElement('div', { className: 'html' }),
-                _react2.default.createElement('div', { className: 'css' }),
+                _react2.default.createElement('div', { className: 'html5' }),
+                _react2.default.createElement('div', { className: 'css3' }),
                 _react2.default.createElement('div', { className: 'js' }),
                 _react2.default.createElement('div', { className: 'jQuery' }),
                 _react2.default.createElement('div', { className: 'react' }),

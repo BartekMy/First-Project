@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Indie Flower', cursive;
+  font: 100% "Indie Flower", cursive;
 }
 
 .flexbox {
@@ -29,12 +29,18 @@ body {
   color: white;
 }
 
-.main {
-  width: 80vw;
-}
-
 .footer {
   background: black;
+  color: white;
+}
+
+.footer .copy {
+  float: right;
+}
+
+.footer .village {
+  float: left;
+  text-decoration: none;
   color: white;
 }
 
@@ -64,8 +70,7 @@ body {
   flex-flow: row wrap;
 }
 
-#home {
-  text-align: left;
+#home, #living_room, #office, #contact {
   background: url("../images/partTwo/home.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -75,7 +80,6 @@ body {
 }
 
 #living_room {
-  text-align: left;
   background: url("../images/partTwo/living_room.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -85,7 +89,6 @@ body {
 }
 
 #office {
-  text-align: left;
   background: url("../images/partTwo/office.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -95,13 +98,16 @@ body {
 }
 
 #contact {
-  text-align: left;
   background: url("../images/partTwo/contact.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
-  width: 100%;
+  margin-bottom: 10px;
+}
+
+#contact {
+  margin-bottom: 0px;
 }
 
 .flags {
@@ -118,8 +124,8 @@ body {
   width: 100%;
 }
 
-.uk {
-  background: url("../images/partTwo/UK.png");
+.flags .uk, .flags .germany, .flags .poland {
+  background: url("../images/partTwo/uk.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -127,17 +133,13 @@ body {
   width: 30%;
 }
 
-.uk:hover {
-  background: url("../images/partTwo/UK.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+.flags .uk:hover, .flags .germany:hover, .flags .poland:hover {
   height: 33%;
   width: 33%;
 }
 
-.germany {
-  background: url("../images/partTwo/Germany.png");
+.flags .germany {
+  background: url("../images/partTwo/germany.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -145,17 +147,13 @@ body {
   width: 30%;
 }
 
-.germany:hover {
-  background: url("../images/partTwo/Germany.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+.flags .germany:hover {
   height: 33%;
   width: 33%;
 }
 
-.poland {
-  background: url("../images/partTwo/Poland.png");
+.flags .poland {
+  background: url("../images/partTwo/poland.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -163,11 +161,7 @@ body {
   width: 30%;
 }
 
-.poland:hover {
-  background: url("../images/partTwo/Poland.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+.flags .poland:hover {
   height: 33%;
   width: 33%;
 }
@@ -182,7 +176,7 @@ body {
   width: 100%;
 }
 
-.html {
+.icons .html5, .icons .css3, .icons .js, .icons .jQuery, .icons .react, .icons .sass, .icons .git {
   background: url("../images/partTwo/html5.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -191,7 +185,7 @@ body {
   width: 20%;
 }
 
-.css {
+.icons .css3 {
   background: url("../images/partTwo/css3.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -200,7 +194,7 @@ body {
   width: 20%;
 }
 
-.js {
+.icons .js {
   background: url("../images/partTwo/js.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -209,7 +203,7 @@ body {
   width: 20%;
 }
 
-.jQuery {
+.icons .jQuery {
   background: url("../images/partTwo/jQuery.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -218,7 +212,7 @@ body {
   width: 20%;
 }
 
-.react {
+.icons .react {
   background: url("../images/partTwo/react.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -227,7 +221,7 @@ body {
   width: 20%;
 }
 
-.sass {
+.icons .sass {
   background: url("../images/partTwo/sass.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -236,17 +230,13 @@ body {
   width: 20%;
 }
 
-.git {
+.icons .git {
   background: url("../images/partTwo/git.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   height: 100%;
   width: 20%;
-}
-
-.aside {
-  background: white;
 }
 
 @media all and (min-width: 600px) {
@@ -274,42 +264,38 @@ body {
   }
 }
 
-.navigation {
-  list-style: none;
-  margin: 0;
-  background: black;
-}
-
 .sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 10px;
 }
 
-.navigation a {
+.sticky .navigation {
+  list-style: none;
+  margin: 0;
+  background: black;
+}
+
+.sticky .navigation a {
+  text-align: center;
   text-decoration: none;
   display: block;
   padding: 1em;
   color: white;
-}
-
-.navigation a:hover {
-  background: white;
-  color: black;
-}
-
-.navigation a {
-  text-align: center;
-  padding: 10px;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sticky .navigation a:hover {
+  background: white;
+  color: black;
 }
 
 .navigation li:last-of-type a {
   border-bottom: none;
 }
 
-.adress {
+.adress, .email, .li_icon, .phone, .gh_icon {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -320,7 +306,7 @@ body {
   position: relative;
 }
 
-.pin {
+.adress .pin, .email .pin, .li_icon .pin, .phone .pin, .gh_icon .pin, .email .gmail, .li_icon .linkedin, .phone .number, .gh_icon .github {
   background: url("../images/partTwo/pin.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -330,18 +316,7 @@ body {
   margin: 10px;
 }
 
-.email {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  margin: 10px;
-  position: relative;
-}
-
-.gmail {
+.adress .gmail, .email .gmail, .li_icon .gmail, .phone .gmail, .gh_icon .gmail {
   background: url("../images/partTwo/gmail.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -351,18 +326,7 @@ body {
   margin: 10px;
 }
 
-.linkedin {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  margin: 10px;
-  position: relative;
-}
-
-.li_icon {
+.adress .linkedin, .email .linkedin, .li_icon .linkedin, .phone .linkedin, .gh_icon .linkedin {
   background: url("../images/partTwo/linkedin.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -372,18 +336,7 @@ body {
   margin: 10px;
 }
 
-.phone {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  margin: 10px;
-  position: relative;
-}
-
-.number {
+.adress .number, .email .number, .li_icon .number, .phone .number, .gh_icon .number {
   background: url("../images/partTwo/number.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -393,18 +346,7 @@ body {
   margin: 10px;
 }
 
-.github {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  margin: 10px;
-  position: relative;
-}
-
-.gh_icon {
+.adress .github, .email .github, .li_icon .github, .phone .github, .gh_icon .github {
   background: url("../images/partTwo/github.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -412,16 +354,6 @@ body {
   height: 40px;
   width: 40px;
   margin: 10px;
-}
-
-.copy {
-  float: right;
-}
-
-.village {
-  float: left;
-  text-decoration: none;
-  color: white;
 }
 
 /*# sourceMappingURL=../maps/me.css.map */
