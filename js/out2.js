@@ -9450,7 +9450,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Footer.__proto__ || Object.getPrototypeOf(Footer)).call.apply(_ref, [this].concat(args))), _this), _this.handleOnClick = function () {
-        window.location = "../First-Project/index.html";
+        document.location = "../First-Project/index.html";
       }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 

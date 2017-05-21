@@ -22,7 +22,7 @@ const officeEducationText = "BA in translation English / Polish Bachelor thesis:
 
 class Footer extends React. Component {
   handleOnClick = () => {
-    window.location = "../First-Project/index.html";
+    document.location = "../First-Project/index.html";
   }
 
   render() {
