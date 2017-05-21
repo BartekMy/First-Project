@@ -1,0 +1,17 @@
+@each $icon in man, house, tree, zombie {
+.#{$icon} {
+  background-image: url('../images/partOne/#{$icon}.png');
+  background-repeat: no-repeat;
+  background-size: 100;
+  background-position: center;
+ }
+}
+.house {
+  @extend .man;
+}
+.tree {
+  @extend .man;
+}
+.zombie {
+  @extend .man;
+}

@@ -1,0 +1,11 @@
+#board {
+  width: $board_width;
+  height: $board-height;
+  margin: 1em auto;
+  border: 2px solid black;
+> div {
+  float: left;
+  width: 64px;
+  height: 64px;
+  }
+}

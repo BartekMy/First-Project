@@ -9601,7 +9601,7 @@ document.addEventListener('DOMContentLoaded', function () {
           _react2.default.createElement(
             'a',
             { href: '#', className: 'village', onClick: this.handleOnClick },
-            'Lets go back to Zombieville'
+            'RETURN TO THE ZOMBIEGAME'
           ),
           _react2.default.createElement(
             'p',
