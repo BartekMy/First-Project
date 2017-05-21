@@ -2,8 +2,6 @@
   background-color: rgba(255,255,255,0.5);
   height: 100%;
   width: 100%;
-  display: block;
-  text-align: center;
 
   display: -webkit-box;
   display: -moz-box;
@@ -15,6 +13,15 @@
 
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
+h1 {
+    font-size: 2em;
+    padding: 2em;
+ } h2 {
+  padding-top: 1.5em;
+ } p {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  }
 }
 
 @each $main_picture in home, living_room, office, contact {
@@ -130,5 +137,9 @@
   .flags {
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
+  }
+  .textfield {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
   }
 }

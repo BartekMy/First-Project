@@ -57,8 +57,6 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   height: 100%;
   width: 100%;
-  display: block;
-  text-align: center;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -68,6 +66,20 @@ body {
   align-items: center;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
+}
+
+.textfield h1 {
+  font-size: 2em;
+  padding: 2em;
+}
+
+.textfield h2 {
+  padding-top: 1.5em;
+}
+
+.textfield p {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 #home, #living_room, #office, #contact {
@@ -261,6 +273,10 @@ body {
   .flags {
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
+  }
+  .textfield {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
   }
 }
 
