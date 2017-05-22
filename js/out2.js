@@ -9435,50 +9435,378 @@ document.addEventListener('DOMContentLoaded', function () {
   var officeEducationHeader = "Hochschule Zittau / Görlitz - University of Applied Sciences  09/2011 - 11/2015";
   var officeEducationText = "BA in translation English / Polish Bachelor thesis: Software localization - General theoretical introduction and the practical implementation on the basis of chosen digital games";
 
-  var Footer = function (_React$Component) {
-    _inherits(Footer, _React$Component);
+  var Header = function (_React$Component) {
+    _inherits(Header, _React$Component);
 
-    function Footer() {
-      var _ref;
+    function Header() {
+      _classCallCheck(this, Header);
 
-      var _temp, _this, _ret;
-
-      _classCallCheck(this, Footer);
-
-      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-        args[_key] = arguments[_key];
-      }
-
-      return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Footer.__proto__ || Object.getPrototypeOf(Footer)).call.apply(_ref, [this].concat(args))), _this), _this.handleOnClick = function () {
-        document.location = "../First-Project/index.html";
-      }, _temp), _possibleConstructorReturn(_this, _ret);
+      return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
     }
 
-    _createClass(Footer, [{
+    _createClass(Header, [{
       key: 'render',
       value: function render() {
         return _react2.default.createElement(
-          'footer',
-          { className: 'footer' },
+          'header',
+          { className: 'header' },
+          'Welcome to my Home'
+        );
+      }
+    }]);
+
+    return Header;
+  }(_react2.default.Component);
+
+  var Textfield_home = function (_React$Component2) {
+    _inherits(Textfield_home, _React$Component2);
+
+    function Textfield_home() {
+      _classCallCheck(this, Textfield_home);
+
+      return _possibleConstructorReturn(this, (Textfield_home.__proto__ || Object.getPrototypeOf(Textfield_home)).apply(this, arguments));
+    }
+
+    _createClass(Textfield_home, [{
+      key: 'render',
+      value: function render() {
+        return _react2.default.createElement(
+          'div',
+          { className: 'textfield_home' },
           _react2.default.createElement(
-            'a',
-            { href: '#', className: 'village', onClick: this.handleOnClick },
-            'RETURN TO THE ZOMBIEGAME'
+            'h1',
+            null,
+            homeTextHeading
           ),
           _react2.default.createElement(
             'p',
-            { className: 'copy' },
-            'Copyright \xA9 2017 Bartosz Mylka All rights reserved.'
+            null,
+            'My name is Bartosz Mylka and this is my first project as a Front-End Developer. Feel free to have a look on it but its not finished yet. In my ',
+            _react2.default.createElement(
+              'a',
+              { href: '#living_room' },
+              'living room'
+            ),
+            ' and ',
+            _react2.default.createElement(
+              'a',
+              { href: '#office' },
+              'office'
+            ),
+            ' you will find more Information about me. You can also download my CV in English, German or Polish. Just click on one of the flags.'
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'flags' },
+            _react2.default.createElement('a', { className: 'uk', download: true, href: './pdf/Bartosz_Mylka_CV_ENG.pdf' }),
+            _react2.default.createElement('a', { className: 'germany', download: true, href: './pdf/Bartosz_Mylka_CV_DE.pdf' }),
+            _react2.default.createElement('a', { className: 'poland', download: true, href: './pdf/Bartosz_Mylka_CV_PL.pdf' })
           )
         );
       }
     }]);
 
-    return Footer;
+    return Textfield_home;
   }(_react2.default.Component);
 
-  var Navigation = function (_React$Component2) {
-    _inherits(Navigation, _React$Component2);
+  var Textfield_living_room = function (_React$Component3) {
+    _inherits(Textfield_living_room, _React$Component3);
+
+    function Textfield_living_room() {
+      _classCallCheck(this, Textfield_living_room);
+
+      return _possibleConstructorReturn(this, (Textfield_living_room.__proto__ || Object.getPrototypeOf(Textfield_living_room)).apply(this, arguments));
+    }
+
+    _createClass(Textfield_living_room, [{
+      key: 'render',
+      value: function render() {
+        return _react2.default.createElement(
+          'div',
+          { className: 'textfield_living_room' },
+          _react2.default.createElement(
+            'h1',
+            null,
+            livingRoomTextHeading
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'icons' },
+            _react2.default.createElement('div', { className: 'html5' }),
+            _react2.default.createElement('div', { className: 'css3' }),
+            _react2.default.createElement('div', { className: 'js' }),
+            _react2.default.createElement('div', { className: 'jQuery' }),
+            _react2.default.createElement('div', { className: 'react' }),
+            _react2.default.createElement('div', { className: 'sass' }),
+            _react2.default.createElement('div', { className: 'git' })
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            livingRoomText
+          ),
+          _react2.default.createElement(
+            'h2',
+            null,
+            livingRoomTextHeading2
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            livingRoomText2
+          ),
+          _react2.default.createElement(
+            'h3',
+            null,
+            'Check out my ',
+            _react2.default.createElement(
+              'a',
+              { href: '#office' },
+              'My Office'
+            ),
+            ' to find more about my previous job experience and education.'
+          )
+        );
+      }
+    }]);
+
+    return Textfield_living_room;
+  }(_react2.default.Component);
+
+  var Textfield_office = function (_React$Component4) {
+    _inherits(Textfield_office, _React$Component4);
+
+    function Textfield_office() {
+      _classCallCheck(this, Textfield_office);
+
+      return _possibleConstructorReturn(this, (Textfield_office.__proto__ || Object.getPrototypeOf(Textfield_office)).apply(this, arguments));
+    }
+
+    _createClass(Textfield_office, [{
+      key: 'render',
+      value: function render() {
+        return _react2.default.createElement(
+          'div',
+          { className: 'textfield_office' },
+          _react2.default.createElement(
+            'h1',
+            null,
+            officeExperienceHeading
+          ),
+          _react2.default.createElement(
+            'h2',
+            null,
+            officeExperience1Header
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            officeExperience1Text
+          ),
+          _react2.default.createElement(
+            'h2',
+            null,
+            officeExperience2Header
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            officeExperience2Text
+          ),
+          _react2.default.createElement(
+            'h2',
+            null,
+            officeExperience3Header
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            officeExperience3Text
+          ),
+          _react2.default.createElement(
+            'h2',
+            null,
+            officeExperience4Header
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            officeExperience4Text
+          ),
+          _react2.default.createElement(
+            'h1',
+            null,
+            officeEducationHeading
+          ),
+          _react2.default.createElement(
+            'h2',
+            null,
+            officeEducationHeader
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            officeEducationText
+          )
+        );
+      }
+    }]);
+
+    return Textfield_office;
+  }(_react2.default.Component);
+
+  var Textfield_contact = function (_React$Component5) {
+    _inherits(Textfield_contact, _React$Component5);
+
+    function Textfield_contact() {
+      _classCallCheck(this, Textfield_contact);
+
+      return _possibleConstructorReturn(this, (Textfield_contact.__proto__ || Object.getPrototypeOf(Textfield_contact)).apply(this, arguments));
+    }
+
+    _createClass(Textfield_contact, [{
+      key: 'render',
+      value: function render() {
+        return _react2.default.createElement(
+          'div',
+          { className: 'textfield_contact' },
+          _react2.default.createElement(
+            'div',
+            { className: 'adress' },
+            _react2.default.createElement('div', { className: 'pin' }),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Bartosz Mylka',
+              _react2.default.createElement('br', null),
+              'ul. Przestrzenna 41/2',
+              _react2.default.createElement('br', null),
+              '50-534 Wroclaw'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'email' },
+            _react2.default.createElement('div', { className: 'gmail' }),
+            _react2.default.createElement(
+              'a',
+              { href: 'mailto:bmylka@gmail.com' },
+              'bmylka@gmail.com'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'phone' },
+            _react2.default.createElement('div', { className: 'number' }),
+            _react2.default.createElement(
+              'p',
+              null,
+              '+48 504 505 230'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'li_icon' },
+            _react2.default.createElement('div', { className: 'linkedin' }),
+            _react2.default.createElement(
+              'a',
+              { href: 'https://linkedin.com/in/bartosz-mylka' },
+              'linkedin.com/in/bartosz-mylka'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'gh_icon' },
+            _react2.default.createElement('div', { className: 'github' }),
+            _react2.default.createElement(
+              'a',
+              { href: 'https://github.com/BartekMy' },
+              'github.com/BartekMy'
+            )
+          )
+        );
+      }
+    }]);
+
+    return Textfield_contact;
+  }(_react2.default.Component);
+
+  var Article = function (_React$Component6) {
+    _inherits(Article, _React$Component6);
+
+    function Article(props) {
+      _classCallCheck(this, Article);
+
+      var _this6 = _possibleConstructorReturn(this, (Article.__proto__ || Object.getPrototypeOf(Article)).call(this, props));
+
+      _this6.handleOnMouseEnter1 = function () {
+        _this6.setState({
+          showTextfield_home: true
+        });
+      };
+
+      _this6.handleOnMouseEnter2 = function () {
+        _this6.setState({
+          showTextfield_living_room: true
+        });
+      };
+
+      _this6.handleOnMouseEnter3 = function () {
+        _this6.setState({
+          showTextfield_office: true
+        });
+      };
+
+      _this6.handleOnMouseEnter4 = function () {
+        _this6.setState({
+          showTextfield_contact: true
+        });
+      };
+
+      _this6.state = {
+        showTextfield_home: false,
+        showTextfield_living_room: false,
+        showTextfield_office: false,
+        showTextfield_contact: false
+      };
+      return _this6;
+    }
+
+    _createClass(Article, [{
+      key: 'render',
+      value: function render() {
+        return _react2.default.createElement(
+          'article',
+          { className: 'main' },
+          _react2.default.createElement(
+            'div',
+            { id: 'home', onMouseEnter: this.handleOnMouseEnter1 },
+            this.state.showTextfield_home ? _react2.default.createElement(Textfield_home, null) : null
+          ),
+          _react2.default.createElement(
+            'div',
+            { id: 'living_room', onMouseEnter: this.handleOnMouseEnter2 },
+            this.state.showTextfield_living_room ? _react2.default.createElement(Textfield_living_room, null) : null
+          ),
+          _react2.default.createElement(
+            'div',
+            { id: 'office', onMouseEnter: this.handleOnMouseEnter3 },
+            this.state.showTextfield_office ? _react2.default.createElement(Textfield_office, null) : null
+          ),
+          _react2.default.createElement(
+            'div',
+            { id: 'contact', onMouseEnter: this.handleOnMouseEnter4 },
+            this.state.showTextfield_contact ? _react2.default.createElement(Textfield_contact, null) : null
+          )
+        );
+      }
+    }]);
+
+    return Article;
+  }(_react2.default.Component);
+
+  var Navigation = function (_React$Component7) {
+    _inherits(Navigation, _React$Component7);
 
     function Navigation() {
       _classCallCheck(this, Navigation);
@@ -9490,51 +9818,70 @@ document.addEventListener('DOMContentLoaded', function () {
       key: 'render',
       value: function render() {
         return _react2.default.createElement(
+          'ul',
+          { className: 'navigation' },
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              'a',
+              { href: '#home' },
+              'Home'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              'a',
+              { href: '#living_room' },
+              'Living Room'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              'a',
+              { href: '#office' },
+              'My Office'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              'a',
+              { className: 'contactBtn', href: '#contact' },
+              'Contact'
+            )
+          )
+        );
+      }
+    }]);
+
+    return Navigation;
+  }(_react2.default.Component);
+
+  var Aside = function (_React$Component8) {
+    _inherits(Aside, _React$Component8);
+
+    function Aside() {
+      _classCallCheck(this, Aside);
+
+      return _possibleConstructorReturn(this, (Aside.__proto__ || Object.getPrototypeOf(Aside)).apply(this, arguments));
+    }
+
+    _createClass(Aside, [{
+      key: 'render',
+      value: function render() {
+        return _react2.default.createElement(
           'nav',
           { className: 'aside' },
           _react2.default.createElement(
             'div',
             { className: 'sticky' },
-            _react2.default.createElement(
-              'ul',
-              { className: 'navigation' },
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'a',
-                  { href: '#home' },
-                  'Home'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'a',
-                  { href: '#living_room' },
-                  'Living Room'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'a',
-                  { href: '#office' },
-                  'My Office'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'a',
-                  { className: 'contactBtn', href: '#contact' },
-                  'Contact'
-                )
-              )
-            ),
+            _react2.default.createElement(Navigation, null),
             _react2.default.createElement(
               'div',
               { className: 'adress' },
@@ -9594,309 +9941,53 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }]);
 
-    return Navigation;
+    return Aside;
   }(_react2.default.Component);
 
-  var Article = function (_React$Component3) {
-    _inherits(Article, _React$Component3);
+  var Footer = function (_React$Component9) {
+    _inherits(Footer, _React$Component9);
 
-    function Article(props) {
-      _classCallCheck(this, Article);
+    function Footer() {
+      var _ref;
 
-      var _this3 = _possibleConstructorReturn(this, (Article.__proto__ || Object.getPrototypeOf(Article)).call(this, props));
+      var _temp, _this9, _ret;
 
-      _this3.handleOnMouseEnter1 = function () {
-        _this3.setState({
-          showTextfield_home: true
-        });
-      };
+      _classCallCheck(this, Footer);
 
-      _this3.handleOnMouseEnter2 = function () {
-        _this3.setState({
-          showTextfield_living_room: true
-        });
-      };
+      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
 
-      _this3.handleOnMouseEnter3 = function () {
-        _this3.setState({
-          showTextfield_office: true
-        });
-      };
-
-      _this3.handleOnMouseEnter4 = function () {
-        _this3.setState({
-          showTextfield_contact: true
-        });
-      };
-
-      _this3.state = {
-        showTextfield_home: false,
-        showTextfield_living_room: false,
-        showTextfield_office: false,
-        showTextfield_contact: false
-      };
-      return _this3;
+      return _ret = (_temp = (_this9 = _possibleConstructorReturn(this, (_ref = Footer.__proto__ || Object.getPrototypeOf(Footer)).call.apply(_ref, [this].concat(args))), _this9), _this9.handleOnClick = function () {
+        document.location = "../First-Project/index.html";
+      }, _temp), _possibleConstructorReturn(_this9, _ret);
     }
 
-    _createClass(Article, [{
+    _createClass(Footer, [{
       key: 'render',
       value: function render() {
         return _react2.default.createElement(
-          'article',
-          { className: 'main' },
+          'footer',
+          { className: 'footer' },
           _react2.default.createElement(
-            'div',
-            { id: 'home', onMouseEnter: this.handleOnMouseEnter1 },
-            this.state.showTextfield_home ? _react2.default.createElement(
-              'div',
-              { className: 'textfield' },
-              _react2.default.createElement(
-                'h1',
-                null,
-                homeTextHeading
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                'My name is Bartosz Mylka and this is my first project as a Front-End Developer. Feel free to have a look on it but its not finished yet. In my ',
-                _react2.default.createElement(
-                  'a',
-                  { href: '#living_room' },
-                  'living room'
-                ),
-                ' and ',
-                _react2.default.createElement(
-                  'a',
-                  { href: '#office' },
-                  'office'
-                ),
-                ' you will find more Information about me. You can also download my CV in English, German or Polish. Just click on one of the flags.'
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'flags' },
-                _react2.default.createElement('a', { className: 'uk', download: true, href: './pdf/Bartosz_Mylka_CV_ENG.pdf' }),
-                _react2.default.createElement('a', { className: 'germany', download: true, href: './pdf/Bartosz_Mylka_CV_DE.pdf' }),
-                _react2.default.createElement('a', { className: 'poland', download: true, href: './pdf/Bartosz_Mylka_CV_PL.pdf' })
-              )
-            ) : null
+            'a',
+            { href: '#', className: 'village', onClick: this.handleOnClick },
+            'RETURN TO THE ZOMBIEGAME'
           ),
           _react2.default.createElement(
-            'div',
-            { id: 'living_room', onMouseEnter: this.handleOnMouseEnter2 },
-            this.state.showTextfield_living_room ? _react2.default.createElement(
-              'div',
-              { className: 'textfield' },
-              _react2.default.createElement(
-                'h1',
-                null,
-                livingRoomTextHeading
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'icons' },
-                _react2.default.createElement('div', { className: 'html5' }),
-                _react2.default.createElement('div', { className: 'css3' }),
-                _react2.default.createElement('div', { className: 'js' }),
-                _react2.default.createElement('div', { className: 'jQuery' }),
-                _react2.default.createElement('div', { className: 'react' }),
-                _react2.default.createElement('div', { className: 'sass' }),
-                _react2.default.createElement('div', { className: 'git' })
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                livingRoomText
-              ),
-              _react2.default.createElement(
-                'h2',
-                null,
-                livingRoomTextHeading2
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                livingRoomText2
-              ),
-              _react2.default.createElement(
-                'h3',
-                null,
-                'Check out my ',
-                _react2.default.createElement(
-                  'a',
-                  { href: '#office' },
-                  'My Office'
-                ),
-                ' to find more about my previous job experience and education.'
-              )
-            ) : null
-          ),
-          _react2.default.createElement(
-            'div',
-            { id: 'office', onMouseEnter: this.handleOnMouseEnter3 },
-            this.state.showTextfield_office ? _react2.default.createElement(
-              'div',
-              { className: 'textfield' },
-              _react2.default.createElement(
-                'div',
-                { className: 'about_me' },
-                _react2.default.createElement(
-                  'h1',
-                  null,
-                  officeExperienceHeading
-                ),
-                _react2.default.createElement(
-                  'h2',
-                  null,
-                  officeExperience1Header
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  officeExperience1Text
-                ),
-                _react2.default.createElement(
-                  'h2',
-                  null,
-                  officeExperience2Header
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  officeExperience2Text
-                ),
-                _react2.default.createElement(
-                  'h2',
-                  null,
-                  officeExperience3Header
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  officeExperience3Text
-                ),
-                _react2.default.createElement(
-                  'h2',
-                  null,
-                  officeExperience4Header
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  officeExperience4Text
-                ),
-                _react2.default.createElement(
-                  'h1',
-                  null,
-                  officeEducationHeading
-                ),
-                _react2.default.createElement(
-                  'h2',
-                  null,
-                  officeEducationHeader
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  officeEducationText
-                )
-              )
-            ) : null
-          ),
-          _react2.default.createElement(
-            'div',
-            { id: 'contact', onMouseEnter: this.handleOnMouseEnter4 },
-            this.state.showTextfield_contact ? _react2.default.createElement(
-              'div',
-              { className: 'textfield' },
-              _react2.default.createElement(
-                'div',
-                { className: 'adress' },
-                _react2.default.createElement('div', { className: 'pin' }),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Bartosz Mylka',
-                  _react2.default.createElement('br', null),
-                  'ul. Przestrzenna 41/2',
-                  _react2.default.createElement('br', null),
-                  '50-534 Wroclaw'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'email' },
-                _react2.default.createElement('div', { className: 'gmail' }),
-                _react2.default.createElement(
-                  'a',
-                  { href: 'mailto:bmylka@gmail.com' },
-                  'bmylka@gmail.com'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'phone' },
-                _react2.default.createElement('div', { className: 'number' }),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  '+48 504 505 230'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'li_icon' },
-                _react2.default.createElement('div', { className: 'linkedin' }),
-                _react2.default.createElement(
-                  'a',
-                  { href: 'https://linkedin.com/in/bartosz-mylka' },
-                  'linkedin.com/in/bartosz-mylka'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'gh_icon' },
-                _react2.default.createElement('div', { className: 'github' }),
-                _react2.default.createElement(
-                  'a',
-                  { href: 'https://github.com/BartekMy' },
-                  'github.com/BartekMy'
-                )
-              )
-            ) : null
+            'p',
+            { className: 'copy' },
+            'Copyright \xA9 2017 Bartosz Mylka All rights reserved.'
           )
         );
       }
     }]);
 
-    return Article;
+    return Footer;
   }(_react2.default.Component);
 
-  var Header = function (_React$Component4) {
-    _inherits(Header, _React$Component4);
-
-    function Header() {
-      _classCallCheck(this, Header);
-
-      return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
-    }
-
-    _createClass(Header, [{
-      key: 'render',
-      value: function render() {
-        return _react2.default.createElement(
-          'header',
-          { className: 'header' },
-          'Welcome to my Home'
-        );
-      }
-    }]);
-
-    return Header;
-  }(_react2.default.Component);
-
-  var App = function (_React$Component5) {
-    _inherits(App, _React$Component5);
+  var App = function (_React$Component10) {
+    _inherits(App, _React$Component10);
 
     function App() {
       _classCallCheck(this, App);
@@ -9912,7 +10003,7 @@ document.addEventListener('DOMContentLoaded', function () {
           { className: 'flexbox' },
           _react2.default.createElement(Header, null),
           _react2.default.createElement(Article, null),
-          _react2.default.createElement(Navigation, null),
+          _react2.default.createElement(Aside, null),
           _react2.default.createElement(Footer, null)
         );
       }

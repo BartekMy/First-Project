@@ -53,7 +53,7 @@ body {
   color: black;
 }
 
-.textfield {
+.textfield_home, .textfield_living_room, .textfield_office, .textfield_contact {
   background-color: rgba(255, 255, 255, 0.5);
   height: 100%;
   width: 100%;
@@ -68,16 +68,16 @@ body {
   flex-flow: row wrap;
 }
 
-.textfield h1 {
+.textfield_home h1, .textfield_living_room h1, .textfield_office h1, .textfield_contact h1 {
   font-size: 2em;
   padding: 2em;
 }
 
-.textfield h2 {
+.textfield_home h2, .textfield_living_room h2, .textfield_office h2, .textfield_contact h2 {
   padding-top: 1.5em;
 }
 
-.textfield p {
+.textfield_home p, .textfield_living_room p, .textfield_office p, .textfield_contact p {
   padding-top: 1em;
   padding-bottom: 1em;
 }
@@ -274,7 +274,7 @@ body {
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
   }
-  .textfield {
+  .textfield_home, .textfield_living_room, .textfield_office, .textfield_contact {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
   }
